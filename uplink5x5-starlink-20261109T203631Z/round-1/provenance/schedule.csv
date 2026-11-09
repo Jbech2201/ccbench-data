@@ -1,0 +1,5 @@
+direction,scheme,outdir,start_utc,end_utc,runtime_s
+uplink,taova,taova,2026-11-09T20:36:43Z,2026-11-09T20:42:25Z,300
+uplink,indigo,indigo,2026-11-09T20:42:27Z,2026-11-09T20:48:10Z,300
+uplink,vivace,vivace,2026-11-09T20:48:11Z,2026-11-09T20:53:57Z,300
+uplink,pcc,pcc,2026-11-09T20:53:59Z,2026-11-09T20:59:50Z,300

@@ -1,0 +1,65 @@
+Connecting to host 100.101.63.72, port 5222
+[  5] local 100.86.136.88 port 51184 connected to 100.101.63.72 port 5222
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-1.00   sec   610 KBytes  5.00 Mbits/sec  509  
+[  5]   1.00-2.00   sec   610 KBytes  5.00 Mbits/sec  509  
+[  5]   2.00-3.00   sec   610 KBytes  5.00 Mbits/sec  509  
+[  5]   3.00-4.00   sec   610 KBytes  5.00 Mbits/sec  509  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-4.00   sec  2.38 MBytes  5.00 Mbits/sec  0.000 ms  0/2036 (0%)  sender
+[  5]   0.00-4.08   sec  2.38 MBytes  4.90 Mbits/sec  4.639 ms  1/2034 (0.049%)  receiver
+
+iperf Done.
+Connecting to host 100.101.63.72, port 5222
+[  5] local 100.86.136.88 port 38646 connected to 100.101.63.72 port 5222
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-1.00   sec  1.19 MBytes  9.99 Mbits/sec  1017  
+[  5]   1.00-2.00   sec  1.19 MBytes  10.0 Mbits/sec  1018  
+[  5]   2.00-3.00   sec  1.19 MBytes  10.0 Mbits/sec  1018  
+[  5]   3.00-4.00   sec  1.19 MBytes  10.0 Mbits/sec  1018  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-4.00   sec  4.77 MBytes  10.0 Mbits/sec  0.000 ms  0/4071 (0%)  sender
+[  5]   0.00-4.08   sec  4.77 MBytes  9.80 Mbits/sec  2.214 ms  0/4069 (0%)  receiver
+
+iperf Done.
+Connecting to host 100.101.63.72, port 5222
+[  5] local 100.86.136.88 port 58603 connected to 100.101.63.72 port 5222
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-1.00   sec  2.38 MBytes  20.0 Mbits/sec  2034  
+[  5]   1.00-2.00   sec  2.38 MBytes  20.0 Mbits/sec  2036  
+[  5]   2.00-3.00   sec  2.38 MBytes  20.0 Mbits/sec  2036  
+[  5]   3.00-4.00   sec  2.38 MBytes  20.0 Mbits/sec  2036  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-4.00   sec  9.54 MBytes  20.0 Mbits/sec  0.000 ms  0/8142 (0%)  sender
+[  5]   0.00-4.07   sec  9.53 MBytes  19.6 Mbits/sec  1.124 ms  3/8141 (0.037%)  receiver
+
+iperf Done.
+Connecting to host 100.101.63.72, port 5222
+[  5] local 100.86.136.88 port 52256 connected to 100.101.63.72 port 5222
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-1.00   sec  4.76 MBytes  40.0 Mbits/sec  4068  
+[  5]   1.00-2.00   sec  4.77 MBytes  40.0 Mbits/sec  4072  
+[  5]   2.00-3.00   sec  4.77 MBytes  40.0 Mbits/sec  4072  
+[  5]   3.00-4.00   sec  4.77 MBytes  40.0 Mbits/sec  4071  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-4.00   sec  19.1 MBytes  40.0 Mbits/sec  0.000 ms  0/16283 (0%)  sender
+[  5]   0.00-4.07   sec  18.7 MBytes  38.5 Mbits/sec  0.544 ms  323/16283 (2%)  receiver
+
+iperf Done.
+Connecting to host 100.101.63.72, port 5222
+[  5] local 100.86.136.88 port 33958 connected to 100.101.63.72 port 5222
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-1.00   sec  9.53 MBytes  79.9 Mbits/sec  8136  
+[  5]   1.00-2.00   sec  9.54 MBytes  80.0 Mbits/sec  8144  
+[  5]   2.00-3.00   sec  9.54 MBytes  80.0 Mbits/sec  8143  
+[  5]   3.00-4.00   sec  9.54 MBytes  80.0 Mbits/sec  8143  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-4.00   sec  38.1 MBytes  80.0 Mbits/sec  0.000 ms  0/32566 (0%)  sender
+[  5]   0.00-4.19   sec  21.8 MBytes  43.5 Mbits/sec  0.377 ms  13979/32564 (43%)  receiver
+
+iperf Done.

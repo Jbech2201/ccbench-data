@@ -1,0 +1,6 @@
+412K	/home/pep-admin/gladi-path-20261108T111639Z/data/uplink/_ref00_cubic
+336K	/home/pep-admin/gladi-path-20261108T111639Z/data/uplink/taova
+384K	/home/pep-admin/gladi-path-20261108T111639Z/data/uplink/_ref01_cubic
+220K	/home/pep-admin/gladi-path-20261108T111639Z/data/downlink/_ref00_cubic
+576K	/home/pep-admin/gladi-path-20261108T111639Z/data/downlink/taova
+272K	/home/pep-admin/gladi-path-20261108T111639Z/data/downlink/_ref01_cubic

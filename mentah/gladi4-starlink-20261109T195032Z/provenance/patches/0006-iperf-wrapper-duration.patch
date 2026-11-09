@@ -1,0 +1,46 @@
+From: ccbench-remote
+Subject: [PATCH] cubic/bbr/vegas: stop capping the iperf client at 75 s
+
+src/wrappers/cubic.py, bbr.py and vegas.py each build the iperf CLIENT command
+with a hard-coded duration:
+
+    cmd = ['iperf', '-Z', 'cubic', '-c', args.ip, '-p', args.port,
+           '-t', '75']
+
+So every kernel-TCP scheme stops sending after 75 s regardless of `-t`. This is
+the same defect as patches/0004 (taova's `onduration=1000000`): the wrapper is
+never told the experiment runtime, and it enforces a limit of its own.
+
+OBSERVED 2026-11-05, the reference slots of the 1200 s taova smoke, requested
+at -t 120:
+
+    _ref00_cubic   datalink log spans 78.8 s   (47507 lines)
+    _ref01_cubic   datalink log spans 79.6 s   (43247 lines)
+
+78.8 / 120 = 66%, below src/analysis/plot.py:119's `duration < 0.8 * runtime`,
+so both slots would have been thrown away with "Ignoring this run" and written
+`{"cubic": {}}` -- the same way taova's hour was lost on 2026-11-04.
+
+Fix: raise the client's own limit to 360000 s (100 h), well past any runtime we
+will request, so test.py's clock remains the only thing that ends the flow.
+Nothing about TCP Cubic/BBR/Vegas behaviour changes; `-Z <algo>` and every
+other iperf argument are untouched.
+
+NOTE for anyone using upstream Pantheon: unpatched, it cannot measure
+cubic/bbr/vegas for longer than 75 seconds.
+
+--- a/src/wrappers/cubic.py
++++ b/src/wrappers/cubic.py
+@@
+-               '-t', '75']
++               '-t', '360000']
+--- a/src/wrappers/bbr.py
++++ b/src/wrappers/bbr.py
+@@
+-               '-t', '75']
++               '-t', '360000']
+--- a/src/wrappers/vegas.py
++++ b/src/wrappers/vegas.py
+@@
+-               '-t', '75']
++               '-t', '360000']

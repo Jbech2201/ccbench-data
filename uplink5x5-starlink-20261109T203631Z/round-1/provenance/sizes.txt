@@ -1,0 +1,4 @@
+4.9M	/home/pep-admin/uplink5x5-starlink-20261109T203631Z/round-1/data/uplink/taova
+6.2M	/home/pep-admin/uplink5x5-starlink-20261109T203631Z/round-1/data/uplink/indigo
+14M	/home/pep-admin/uplink5x5-starlink-20261109T203631Z/round-1/data/uplink/vivace
+22M	/home/pep-admin/uplink5x5-starlink-20261109T203631Z/round-1/data/uplink/pcc

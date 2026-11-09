@@ -1,0 +1,7 @@
+direction,scheme,outdir,start_utc,end_utc,runtime_s
+uplink,cubic,_ref00_cubic,2026-11-08T11:16:52Z,2026-11-08T11:17:52Z,20
+uplink,taova,taova,2026-11-08T11:17:54Z,2026-11-08T11:18:53Z,20
+uplink,cubic,_ref01_cubic,2026-11-08T11:18:54Z,2026-11-08T11:19:57Z,20
+downlink,cubic,_ref00_cubic,2026-11-08T11:19:58Z,2026-11-08T11:20:58Z,20
+downlink,taova,taova,2026-11-08T11:20:59Z,2026-11-08T11:21:58Z,20
+downlink,cubic,_ref01_cubic,2026-11-08T11:21:59Z,2026-11-08T11:22:59Z,20

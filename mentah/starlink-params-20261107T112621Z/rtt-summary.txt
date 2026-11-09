@@ -1,0 +1,2 @@
+n=150  min=63.0  p05=65.4  p25=69.3  p50=73.6  p75=79.1  p95=96.8  max=130.0 ms
+-> ConfigRange rtt: low=63 high=97  (min dan p95)

@@ -1,0 +1,2 @@
+3.6M	/home/pep-admin/rrtrial-starlink-20261109T214143Z/data/uplink/rr-1
+6.2M	/home/pep-admin/rrtrial-starlink-20261109T214143Z/data/uplink/rr-2

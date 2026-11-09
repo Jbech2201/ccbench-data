@@ -1,0 +1,11 @@
+utc	via	rtt_ms	raw
+2026-11-09T08:42:21Z	DERP(sin)	41	pong from cbr2server (100.101.63.72) via DERP(sin) in 41ms
+2026-11-09T08:42:27Z	DERP(sin)	45	pong from cbr2server (100.101.63.72) via DERP(sin) in 45ms
+2026-11-09T08:42:33Z	DERP(sin)	41	pong from cbr2server (100.101.63.72) via DERP(sin) in 41ms
+2026-11-09T08:42:39Z	DERP(sin)	43	pong from cbr2server (100.101.63.72) via DERP(sin) in 43ms
+2026-11-09T08:42:45Z	DERP(sin)	46	pong from cbr2server (100.101.63.72) via DERP(sin) in 46ms
+2026-11-09T08:42:51Z	DERP(sin)	53	pong from cbr2server (100.101.63.72) via DERP(sin) in 53ms
+2026-11-09T08:42:57Z	DERP(sin)	126	pong from cbr2server (100.101.63.72) via DERP(sin) in 126ms
+2026-11-09T08:43:03Z	DERP(sin)	123	pong from cbr2server (100.101.63.72) via DERP(sin) in 123ms
+2026-11-09T08:43:10Z	DERP(sin)	138	pong from cbr2server (100.101.63.72) via DERP(sin) in 138ms
+2026-11-09T08:43:16Z	DERP(sin)	95	pong from cbr2server (100.101.63.72) via DERP(sin) in 95ms
