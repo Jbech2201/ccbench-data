@@ -1,0 +1,7 @@
+ccbench-remote: update_submodules() disabled; the tree in this image is already prepared
+$ /pantheon/src/wrappers/taova.py setup_after_reboot
+$ /pantheon/src/wrappers/cubic.py setup_after_reboot
+mesg: ttyname failed: Inappropriate ioctl for device
+ccbench-remote: update_submodules() disabled; the tree in this image is already prepared
+$ /pantheon/src/wrappers/taova.py setup_after_reboot
+$ /pantheon/src/wrappers/cubic.py setup_after_reboot

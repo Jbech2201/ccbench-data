@@ -1,0 +1,44 @@
+$ /pantheon/src/experiments/git_summary.sh
+$ ssh pantheon@100.101.63.72 "cd /pantheon; /pantheon/src/experiments/git_summary.sh"
+Testing scheme pcc for experiment run 1/1...
+$ /pantheon/src/wrappers/pcc.py run_first
+$ ntpdate -t 5 -quv 202.65.114.202
+ 8 Nov 10:51:14 ntpdate[1697]: ntpdate 4.2.8p10@1.3728-o (1)
+server 202.65.114.202, stratum 2, offset -0.000507, delay 0.06737
+ 8 Nov 10:51:29 ntpdate[1697]: adjust time server 202.65.114.202 offset -0.000507 sec
+$ ssh pantheon@100.101.63.72 ntpdate -t 5 -quv 202.65.114.202
+ 8 Nov 10:51:30 ntpdate[1493]: ntpdate 4.2.8p10@1.3728-o (1)
+server 202.65.114.202, stratum 2, offset 0.002587, delay 0.06625
+ 8 Nov 10:51:45 ntpdate[1493]: adjust time server 202.65.114.202 offset 0.002587 sec
+[tunnel server manager (tsm)] $ ssh pantheon@100.101.63.72 python /pantheon/src/experiments/tunnel_manager.py
+tunnel manager is running
+[tunnel client manager (tcm)] $ python /pantheon/src/experiments/tunnel_manager.py
+prompt [tsm]
+tunnel manager is running
+prompt [tcm]
+[tsm] tunnel 1 mm-tunnelserver --ingress-log=/pantheon/tmp/pcc_acklink_run1_flow1_uidc1cde9fc-82cc-46a0-9772-c7d983d2518a.log.ingress --egress-log=/pantheon/tmp/pcc_datalink_run1_flow1_uidc1cde9fc-82cc-46a0-9772-c7d983d2518a.log.egress
+[tsm] tunnel 1 readline
+[tcm] tunnel 1 mm-tunnelclient 100.101.63.72 42530 100.64.0.2 100.64.0.1 --ingress-log=/pantheon/tmp/pcc_datalink_run1_flow1_uidc1cde9fc-82cc-46a0-9772-c7d983d2518a.log.ingress --egress-log=/pantheon/tmp/pcc_acklink_run1_flow1_uidc1cde9fc-82cc-46a0-9772-c7d983d2518a.log.egress
+[tcm] tunnel 1 readline
+Tunnelclient listening for server on port 47057
+Tunnel is connected
+[tcm] tunnel 1 python /pantheon/src/wrappers/pcc.py receiver 34511
+[tsm] tunnel 1 python /pantheon/src/wrappers/pcc.py sender 100.64.0.2 34511
+[tcm] halt
+kill_proc_group: killed process group with pgid 1701
+$ scp -C pantheon@100.101.63.72:/pantheon/tmp/pcc_datalink_run1_flow1_uidc1cde9fc-82cc-46a0-9772-c7d983d2518a.log.egress /pantheon/tmp/pcc_datalink_run1_flow1_uidc1cde9fc-82cc-46a0-9772-c7d983d2518a.log.egress
+[tsm] halt
+kill_proc_group: killed process group with pgid 1498
+$ scp -C pantheon@100.101.63.72:/pantheon/tmp/pcc_acklink_run1_flow1_uidc1cde9fc-82cc-46a0-9772-c7d983d2518a.log.ingress /pantheon/tmp/pcc_acklink_run1_flow1_uidc1cde9fc-82cc-46a0-9772-c7d983d2518a.log.ingress
+$ /pantheon/src/experiments/merge_tunnel_logs.py single -i /pantheon/tmp/pcc_datalink_run1_flow1_uidc1cde9fc-82cc-46a0-9772-c7d983d2518a.log.ingress -e /pantheon/tmp/pcc_datalink_run1_flow1_uidc1cde9fc-82cc-46a0-9772-c7d983d2518a.log.egress -o /pantheon/tmp/pcc_datalink_run1_flow1_uide89b75b7-5c54-407b-a8d6-344d846495f6.log.merged -i-clock-offset -0.507 -e-clock-offset 2.587
+$ /pantheon/src/experiments/merge_tunnel_logs.py single -i /pantheon/tmp/pcc_acklink_run1_flow1_uidc1cde9fc-82cc-46a0-9772-c7d983d2518a.log.ingress -e /pantheon/tmp/pcc_acklink_run1_flow1_uidc1cde9fc-82cc-46a0-9772-c7d983d2518a.log.egress -o /pantheon/tmp/pcc_acklink_run1_flow1_uide89b75b7-5c54-407b-a8d6-344d846495f6.log.merged -i-clock-offset 2.587 -e-clock-offset -0.507
+$ /pantheon/src/experiments/merge_tunnel_logs.py multiple -o /data/downlink/pcc/pcc_datalink_run1.log /pantheon/tmp/pcc_datalink_run1_flow1_uide89b75b7-5c54-407b-a8d6-344d846495f6.log.merged
+$ /pantheon/src/experiments/merge_tunnel_logs.py multiple -o /data/downlink/pcc/pcc_acklink_run1.log /pantheon/tmp/pcc_acklink_run1_flow1_uide89b75b7-5c54-407b-a8d6-344d846495f6.log.merged
+kill_proc_group: killed process group with pgid 1699
+kill_proc_group: killed process group with pgid 1700
+Start at: 2026-11-08 10:51:49
+End at: 2026-11-08 10:52:09
+Local clock offset: -0.507 ms
+Remote clock offset: 2.587 ms
+Done testing pcc
+All tests done!

@@ -1,0 +1,132 @@
+[2026-11-09T08:36:11Z] image: ccbench-remote:20261105T152436Z
+[2026-11-09T08:36:12Z] image identity matches on both hosts: layers=16105bbcee68ee78fdd20b20222bc94a9c243ff45d3c23de0fddf1d10677163d config=52633cc17b2be983b37cd746e20712529806ba65b214727029806eda7840504b
+[2026-11-09T08:36:12Z] disk here: 254G free
+[2026-11-09T08:36:15Z] path at start: pong from cbr2server (100.101.63.72) via DERP(sin) in 42ms
+[2026-11-09T08:36:15Z] WARNING CCB_ALLOW_DERP=1: running over a DERP RELAY. This is a PIPELINE REHEARSAL ONLY; its numbers are not valid data (TCP-over-TCP, docs/decisions/004).
+[2026-11-09T08:36:15Z] starting peer container on cbr2@100.101.63.72
+2026-11-09T08:36:21Z peer sshd procs: 1
+[2026-11-09T08:36:22Z] peer container up (--privileged --device /dev/net/tun), key installed for pantheon, sshd on 2222
+[2026-11-09T08:36:22Z] starting local container
+[2026-11-09T08:36:24Z] per-scheme setup done on both sides
+[2026-11-09T08:36:24Z] interfaces: not pinned; the tunnel follows the route to 100.101.63.72
+[2026-11-09T08:36:24Z] order for uplink: indigo vivace taova pcc 
+[2026-11-09T08:36:24Z] REFERENCE slot 00 (cubic, 20s)
+[2026-11-09T08:36:24Z] START uplink _ref00_cubic (--sender local, -t 20 x 1)
+[2026-11-09T08:37:24Z] DONE  uplink _ref00_cubic  2026-11-09T08:36:24Z -> 2026-11-09T08:37:24Z
+[2026-11-09T08:37:24Z] path for uplink/_ref00_cubic: samples=10 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T08:37:24Z] WARNING uplink/_ref00_cubic saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T08:37:25Z] wrapper output for uplink/_ref00_cubic: local=0B remote=0B
+[2026-11-09T08:37:25Z] disk left: 254G
+[2026-11-09T08:37:25Z] START uplink indigo (--sender local, -t 20 x 1)
+[2026-11-09T08:38:22Z] DONE  uplink indigo  2026-11-09T08:37:25Z -> 2026-11-09T08:38:22Z
+[2026-11-09T08:38:22Z] path for uplink/indigo: samples=10 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T08:38:22Z] WARNING uplink/indigo saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T08:38:23Z] wrapper output for uplink/indigo: local=5666B remote=56B
+[2026-11-09T08:38:23Z] disk left: 254G
+[2026-11-09T08:38:23Z] REFERENCE slot 01 (cubic, 20s)
+[2026-11-09T08:38:23Z] START uplink _ref01_cubic (--sender local, -t 20 x 1)
+[2026-11-09T08:39:22Z] DONE  uplink _ref01_cubic  2026-11-09T08:38:23Z -> 2026-11-09T08:39:22Z
+[2026-11-09T08:39:22Z] path for uplink/_ref01_cubic: samples=10 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T08:39:22Z] WARNING uplink/_ref01_cubic saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T08:39:23Z] wrapper output for uplink/_ref01_cubic: local=0B remote=0B
+[2026-11-09T08:39:23Z] disk left: 254G
+[2026-11-09T08:39:23Z] START uplink vivace (--sender local, -t 20 x 1)
+[2026-11-09T08:40:21Z] DONE  uplink vivace  2026-11-09T08:39:23Z -> 2026-11-09T08:40:21Z
+[2026-11-09T08:40:21Z] path for uplink/vivace: samples=10 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T08:40:21Z] WARNING uplink/vivace saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T08:40:21Z] wrapper output for uplink/vivace: local=600B remote=181B
+[2026-11-09T08:40:21Z] disk left: 254G
+[2026-11-09T08:40:21Z] REFERENCE slot 02 (cubic, 20s)
+[2026-11-09T08:40:21Z] START uplink _ref02_cubic (--sender local, -t 20 x 1)
+[2026-11-09T08:41:21Z] DONE  uplink _ref02_cubic  2026-11-09T08:40:21Z -> 2026-11-09T08:41:21Z
+[2026-11-09T08:41:21Z] path for uplink/_ref02_cubic: samples=10 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T08:41:21Z] WARNING uplink/_ref02_cubic saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T08:41:21Z] wrapper output for uplink/_ref02_cubic: local=0B remote=0B
+[2026-11-09T08:41:21Z] disk left: 254G
+[2026-11-09T08:41:21Z] START uplink taova (--sender local, -t 20 x 1)
+[2026-11-09T08:42:19Z] DONE  uplink taova  2026-11-09T08:41:21Z -> 2026-11-09T08:42:19Z
+[2026-11-09T08:42:19Z] path for uplink/taova: samples=10 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T08:42:19Z] WARNING uplink/taova saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T08:42:20Z] wrapper output for uplink/taova: local=171B remote=55B
+[2026-11-09T08:42:20Z] disk left: 254G
+[2026-11-09T08:42:20Z] REFERENCE slot 03 (cubic, 20s)
+[2026-11-09T08:42:20Z] START uplink _ref03_cubic (--sender local, -t 20 x 1)
+[2026-11-09T08:43:19Z] DONE  uplink _ref03_cubic  2026-11-09T08:42:20Z -> 2026-11-09T08:43:19Z
+[2026-11-09T08:43:19Z] path for uplink/_ref03_cubic: samples=10 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T08:43:19Z] WARNING uplink/_ref03_cubic saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T08:43:20Z] wrapper output for uplink/_ref03_cubic: local=0B remote=0B
+[2026-11-09T08:43:20Z] disk left: 254G
+[2026-11-09T08:43:20Z] START uplink pcc (--sender local, -t 20 x 1)
+[2026-11-09T08:44:18Z] DONE  uplink pcc  2026-11-09T08:43:20Z -> 2026-11-09T08:44:18Z
+[2026-11-09T08:44:18Z] path for uplink/pcc: samples=10 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T08:44:18Z] WARNING uplink/pcc saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T08:44:18Z] wrapper output for uplink/pcc: local=2462B remote=179B
+[2026-11-09T08:44:18Z] disk left: 254G
+[2026-11-09T08:44:18Z] REFERENCE slot 04 (cubic, 20s)
+[2026-11-09T08:44:18Z] START uplink _ref04_cubic (--sender local, -t 20 x 1)
+[2026-11-09T08:45:18Z] DONE  uplink _ref04_cubic  2026-11-09T08:44:18Z -> 2026-11-09T08:45:18Z
+[2026-11-09T08:45:18Z] path for uplink/_ref04_cubic: samples=10 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T08:45:18Z] WARNING uplink/_ref04_cubic saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T08:45:18Z] wrapper output for uplink/_ref04_cubic: local=0B remote=0B
+[2026-11-09T08:45:18Z] disk left: 254G
+[2026-11-09T08:45:18Z] order for downlink: taova vivace indigo pcc 
+[2026-11-09T08:45:18Z] REFERENCE slot 00 (cubic, 20s)
+[2026-11-09T08:45:18Z] START downlink _ref00_cubic (--sender remote, -t 20 x 1)
+[2026-11-09T08:46:18Z] DONE  downlink _ref00_cubic  2026-11-09T08:45:18Z -> 2026-11-09T08:46:18Z
+[2026-11-09T08:46:18Z] path for downlink/_ref00_cubic: samples=10 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T08:46:18Z] WARNING downlink/_ref00_cubic saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T08:46:19Z] wrapper output for downlink/_ref00_cubic: local=0B remote=0B
+[2026-11-09T08:46:19Z] disk left: 254G
+[2026-11-09T08:46:19Z] START downlink taova (--sender remote, -t 20 x 1)
+[2026-11-09T08:47:17Z] DONE  downlink taova  2026-11-09T08:46:19Z -> 2026-11-09T08:47:17Z
+[2026-11-09T08:47:17Z] path for downlink/taova: samples=10 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T08:47:17Z] WARNING downlink/taova saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T08:47:17Z] wrapper output for downlink/taova: local=56B remote=173B
+[2026-11-09T08:47:17Z] disk left: 254G
+[2026-11-09T08:47:17Z] REFERENCE slot 01 (cubic, 20s)
+[2026-11-09T08:47:17Z] START downlink _ref01_cubic (--sender remote, -t 20 x 1)
+[2026-11-09T08:48:17Z] DONE  downlink _ref01_cubic  2026-11-09T08:47:17Z -> 2026-11-09T08:48:17Z
+[2026-11-09T08:48:17Z] path for downlink/_ref01_cubic: samples=10 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T08:48:17Z] WARNING downlink/_ref01_cubic saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T08:48:18Z] wrapper output for downlink/_ref01_cubic: local=0B remote=0B
+[2026-11-09T08:48:18Z] disk left: 254G
+[2026-11-09T08:48:18Z] START downlink vivace (--sender remote, -t 20 x 1)
+[2026-11-09T08:49:15Z] DONE  downlink vivace  2026-11-09T08:48:18Z -> 2026-11-09T08:49:15Z
+[2026-11-09T08:49:15Z] path for downlink/vivace: samples=10 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T08:49:15Z] WARNING downlink/vivace saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T08:49:16Z] wrapper output for downlink/vivace: local=182B remote=567B
+[2026-11-09T08:49:16Z] disk left: 254G
+[2026-11-09T08:49:16Z] REFERENCE slot 02 (cubic, 20s)
+[2026-11-09T08:49:16Z] START downlink _ref02_cubic (--sender remote, -t 20 x 1)
+[2026-11-09T08:50:15Z] DONE  downlink _ref02_cubic  2026-11-09T08:49:16Z -> 2026-11-09T08:50:15Z
+[2026-11-09T08:50:15Z] path for downlink/_ref02_cubic: samples=10 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T08:50:15Z] WARNING downlink/_ref02_cubic saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T08:50:16Z] wrapper output for downlink/_ref02_cubic: local=0B remote=0B
+[2026-11-09T08:50:16Z] disk left: 254G
+[2026-11-09T08:50:16Z] START downlink indigo (--sender remote, -t 20 x 1)
+[2026-11-09T08:51:14Z] DONE  downlink indigo  2026-11-09T08:50:16Z -> 2026-11-09T08:51:14Z
+[2026-11-09T08:51:14Z] path for downlink/indigo: samples=10 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T08:51:14Z] WARNING downlink/indigo saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T08:51:14Z] wrapper output for downlink/indigo: local=57B remote=5667B
+[2026-11-09T08:51:14Z] disk left: 254G
+[2026-11-09T08:51:14Z] REFERENCE slot 03 (cubic, 20s)
+[2026-11-09T08:51:14Z] START downlink _ref03_cubic (--sender remote, -t 20 x 1)
+[2026-11-09T08:52:14Z] DONE  downlink _ref03_cubic  2026-11-09T08:51:14Z -> 2026-11-09T08:52:14Z
+[2026-11-09T08:52:14Z] path for downlink/_ref03_cubic: samples=10 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T08:52:14Z] WARNING downlink/_ref03_cubic saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T08:52:15Z] wrapper output for downlink/_ref03_cubic: local=0B remote=0B
+[2026-11-09T08:52:15Z] disk left: 254G
+[2026-11-09T08:52:15Z] START downlink pcc (--sender remote, -t 20 x 1)
+[2026-11-09T08:53:12Z] DONE  downlink pcc  2026-11-09T08:52:15Z -> 2026-11-09T08:53:12Z
+[2026-11-09T08:53:12Z] path for downlink/pcc: samples=10 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T08:53:12Z] WARNING downlink/pcc saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T08:53:13Z] wrapper output for downlink/pcc: local=179B remote=2551B
+[2026-11-09T08:53:13Z] disk left: 254G
+[2026-11-09T08:53:13Z] REFERENCE slot 04 (cubic, 20s)
+[2026-11-09T08:53:13Z] START downlink _ref04_cubic (--sender remote, -t 20 x 1)
+[2026-11-09T08:54:13Z] DONE  downlink _ref04_cubic  2026-11-09T08:53:13Z -> 2026-11-09T08:54:13Z
+[2026-11-09T08:54:13Z] path for downlink/_ref04_cubic: samples=10 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T08:54:13Z] WARNING downlink/_ref04_cubic saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T08:54:14Z] wrapper output for downlink/_ref04_cubic: local=0B remote=0B
+[2026-11-09T08:54:14Z] disk left: 254G
+[2026-11-09T08:54:14Z] matrix finished; now run scripts/12_collect.sh

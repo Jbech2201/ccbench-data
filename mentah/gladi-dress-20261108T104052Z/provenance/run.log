@@ -1,0 +1,112 @@
+[2026-11-08T10:40:52Z] image: ccbench-remote:20261105T152436Z
+[2026-11-08T10:40:53Z] image identity matches on both hosts: layers=16105bbcee68ee78fdd20b20222bc94a9c243ff45d3c23de0fddf1d10677163d config=52633cc17b2be983b37cd746e20712529806ba65b214727029806eda7840504b
+[2026-11-08T10:40:53Z] disk here: 277G free
+[2026-11-08T10:40:54Z] starting peer container on cbr2@100.101.63.72
+2026-11-08T10:41:01Z peer sshd procs: 1
+[2026-11-08T10:41:02Z] peer container up (--privileged --device /dev/net/tun), key installed for pantheon, sshd on 2222
+[2026-11-08T10:41:02Z] starting local container
+[2026-11-08T10:41:04Z] per-scheme setup done on both sides
+[2026-11-08T10:41:04Z] interfaces: not pinned; the tunnel follows the route to 100.101.63.72
+[2026-11-08T10:41:04Z] order for uplink: indigo taova pcc vivace 
+[2026-11-08T10:41:04Z] REFERENCE slot 00 (cubic, 20s)
+[2026-11-08T10:41:04Z] START uplink _ref00_cubic (--sender local, -t 20 x 1)
+[2026-11-08T10:42:05Z] DONE  uplink _ref00_cubic  2026-11-08T10:41:04Z -> 2026-11-08T10:42:05Z
+[2026-11-08T10:42:05Z] path for uplink/_ref00_cubic: samples=0 distinct_routes=0 [ ]
+[2026-11-08T10:42:06Z] wrapper output for uplink/_ref00_cubic: local=0B remote=0B
+[2026-11-08T10:42:06Z] disk left: 277G
+[2026-11-08T10:42:06Z] START uplink indigo (--sender local, -t 20 x 1)
+[2026-11-08T10:43:04Z] DONE  uplink indigo  2026-11-08T10:42:06Z -> 2026-11-08T10:43:04Z
+[2026-11-08T10:43:04Z] path for uplink/indigo: samples=0 distinct_routes=0 [ ]
+[2026-11-08T10:43:05Z] wrapper output for uplink/indigo: local=5666B remote=56B
+[2026-11-08T10:43:05Z] disk left: 277G
+[2026-11-08T10:43:05Z] REFERENCE slot 01 (cubic, 20s)
+[2026-11-08T10:43:05Z] START uplink _ref01_cubic (--sender local, -t 20 x 1)
+[2026-11-08T10:44:09Z] DONE  uplink _ref01_cubic  2026-11-08T10:43:05Z -> 2026-11-08T10:44:09Z
+[2026-11-08T10:44:09Z] path for uplink/_ref01_cubic: samples=0 distinct_routes=0 [ ]
+[2026-11-08T10:44:10Z] wrapper output for uplink/_ref01_cubic: local=0B remote=0B
+[2026-11-08T10:44:10Z] disk left: 277G
+[2026-11-08T10:44:10Z] START uplink taova (--sender local, -t 20 x 1)
+[2026-11-08T10:45:08Z] DONE  uplink taova  2026-11-08T10:44:10Z -> 2026-11-08T10:45:08Z
+[2026-11-08T10:45:08Z] path for uplink/taova: samples=0 distinct_routes=0 [ ]
+[2026-11-08T10:45:09Z] wrapper output for uplink/taova: local=172B remote=55B
+[2026-11-08T10:45:09Z] disk left: 277G
+[2026-11-08T10:45:09Z] REFERENCE slot 02 (cubic, 20s)
+[2026-11-08T10:45:09Z] START uplink _ref02_cubic (--sender local, -t 20 x 1)
+[2026-11-08T10:46:10Z] DONE  uplink _ref02_cubic  2026-11-08T10:45:09Z -> 2026-11-08T10:46:10Z
+[2026-11-08T10:46:10Z] path for uplink/_ref02_cubic: samples=0 distinct_routes=0 [ ]
+[2026-11-08T10:46:11Z] wrapper output for uplink/_ref02_cubic: local=0B remote=0B
+[2026-11-08T10:46:11Z] disk left: 277G
+[2026-11-08T10:46:11Z] START uplink pcc (--sender local, -t 20 x 1)
+[2026-11-08T10:47:09Z] DONE  uplink pcc  2026-11-08T10:46:11Z -> 2026-11-08T10:47:09Z
+[2026-11-08T10:47:09Z] path for uplink/pcc: samples=0 distinct_routes=0 [ ]
+[2026-11-08T10:47:10Z] wrapper output for uplink/pcc: local=2395B remote=178B
+[2026-11-08T10:47:10Z] disk left: 277G
+[2026-11-08T10:47:10Z] REFERENCE slot 03 (cubic, 20s)
+[2026-11-08T10:47:10Z] START uplink _ref03_cubic (--sender local, -t 20 x 1)
+[2026-11-08T10:48:10Z] DONE  uplink _ref03_cubic  2026-11-08T10:47:10Z -> 2026-11-08T10:48:10Z
+[2026-11-08T10:48:10Z] path for uplink/_ref03_cubic: samples=0 distinct_routes=0 [ ]
+[2026-11-08T10:48:11Z] wrapper output for uplink/_ref03_cubic: local=0B remote=0B
+[2026-11-08T10:48:11Z] disk left: 277G
+[2026-11-08T10:48:11Z] START uplink vivace (--sender local, -t 20 x 1)
+[2026-11-08T10:49:10Z] DONE  uplink vivace  2026-11-08T10:48:11Z -> 2026-11-08T10:49:10Z
+[2026-11-08T10:49:10Z] path for uplink/vivace: samples=0 distinct_routes=0 [ ]
+[2026-11-08T10:49:11Z] wrapper output for uplink/vivace: local=569B remote=182B
+[2026-11-08T10:49:11Z] disk left: 277G
+[2026-11-08T10:49:11Z] REFERENCE slot 04 (cubic, 20s)
+[2026-11-08T10:49:11Z] START uplink _ref04_cubic (--sender local, -t 20 x 1)
+[2026-11-08T10:50:11Z] DONE  uplink _ref04_cubic  2026-11-08T10:49:11Z -> 2026-11-08T10:50:11Z
+[2026-11-08T10:50:11Z] path for uplink/_ref04_cubic: samples=0 distinct_routes=0 [ ]
+[2026-11-08T10:50:12Z] wrapper output for uplink/_ref04_cubic: local=0B remote=0B
+[2026-11-08T10:50:12Z] disk left: 277G
+[2026-11-08T10:50:12Z] order for downlink: pcc taova indigo vivace 
+[2026-11-08T10:50:12Z] REFERENCE slot 00 (cubic, 20s)
+[2026-11-08T10:50:12Z] START downlink _ref00_cubic (--sender remote, -t 20 x 1)
+[2026-11-08T10:51:12Z] DONE  downlink _ref00_cubic  2026-11-08T10:50:12Z -> 2026-11-08T10:51:12Z
+[2026-11-08T10:51:12Z] path for downlink/_ref00_cubic: samples=0 distinct_routes=0 [ ]
+[2026-11-08T10:51:13Z] wrapper output for downlink/_ref00_cubic: local=0B remote=0B
+[2026-11-08T10:51:13Z] disk left: 277G
+[2026-11-08T10:51:13Z] START downlink pcc (--sender remote, -t 20 x 1)
+[2026-11-08T10:52:11Z] DONE  downlink pcc  2026-11-08T10:51:13Z -> 2026-11-08T10:52:11Z
+[2026-11-08T10:52:11Z] path for downlink/pcc: samples=0 distinct_routes=0 [ ]
+[2026-11-08T10:52:12Z] wrapper output for downlink/pcc: local=179B remote=1796B
+[2026-11-08T10:52:12Z] disk left: 277G
+[2026-11-08T10:52:12Z] REFERENCE slot 01 (cubic, 20s)
+[2026-11-08T10:52:12Z] START downlink _ref01_cubic (--sender remote, -t 20 x 1)
+[2026-11-08T10:53:13Z] DONE  downlink _ref01_cubic  2026-11-08T10:52:12Z -> 2026-11-08T10:53:13Z
+[2026-11-08T10:53:13Z] path for downlink/_ref01_cubic: samples=0 distinct_routes=0 [ ]
+[2026-11-08T10:53:14Z] wrapper output for downlink/_ref01_cubic: local=0B remote=0B
+[2026-11-08T10:53:14Z] disk left: 277G
+[2026-11-08T10:53:14Z] START downlink taova (--sender remote, -t 20 x 1)
+[2026-11-08T10:54:13Z] DONE  downlink taova  2026-11-08T10:53:14Z -> 2026-11-08T10:54:13Z
+[2026-11-08T10:54:13Z] path for downlink/taova: samples=0 distinct_routes=0 [ ]
+[2026-11-08T10:54:14Z] wrapper output for downlink/taova: local=56B remote=172B
+[2026-11-08T10:54:14Z] disk left: 277G
+[2026-11-08T10:54:14Z] REFERENCE slot 02 (cubic, 20s)
+[2026-11-08T10:54:14Z] START downlink _ref02_cubic (--sender remote, -t 20 x 1)
+[2026-11-08T10:55:16Z] DONE  downlink _ref02_cubic  2026-11-08T10:54:14Z -> 2026-11-08T10:55:16Z
+[2026-11-08T10:55:16Z] path for downlink/_ref02_cubic: samples=0 distinct_routes=0 [ ]
+[2026-11-08T10:55:17Z] wrapper output for downlink/_ref02_cubic: local=0B remote=0B
+[2026-11-08T10:55:17Z] disk left: 277G
+[2026-11-08T10:55:17Z] START downlink indigo (--sender remote, -t 20 x 1)
+[2026-11-08T10:56:15Z] DONE  downlink indigo  2026-11-08T10:55:17Z -> 2026-11-08T10:56:15Z
+[2026-11-08T10:56:15Z] path for downlink/indigo: samples=0 distinct_routes=0 [ ]
+[2026-11-08T10:56:16Z] wrapper output for downlink/indigo: local=57B remote=5667B
+[2026-11-08T10:56:16Z] disk left: 277G
+[2026-11-08T10:56:16Z] REFERENCE slot 03 (cubic, 20s)
+[2026-11-08T10:56:16Z] START downlink _ref03_cubic (--sender remote, -t 20 x 1)
+[2026-11-08T10:57:17Z] DONE  downlink _ref03_cubic  2026-11-08T10:56:16Z -> 2026-11-08T10:57:17Z
+[2026-11-08T10:57:17Z] path for downlink/_ref03_cubic: samples=0 distinct_routes=0 [ ]
+[2026-11-08T10:57:17Z] wrapper output for downlink/_ref03_cubic: local=0B remote=0B
+[2026-11-08T10:57:17Z] disk left: 277G
+[2026-11-08T10:57:17Z] START downlink vivace (--sender remote, -t 20 x 1)
+[2026-11-08T10:58:15Z] DONE  downlink vivace  2026-11-08T10:57:17Z -> 2026-11-08T10:58:15Z
+[2026-11-08T10:58:15Z] path for downlink/vivace: samples=0 distinct_routes=0 [ ]
+[2026-11-08T10:58:16Z] wrapper output for downlink/vivace: local=182B remote=566B
+[2026-11-08T10:58:16Z] disk left: 277G
+[2026-11-08T10:58:16Z] REFERENCE slot 04 (cubic, 20s)
+[2026-11-08T10:58:16Z] START downlink _ref04_cubic (--sender remote, -t 20 x 1)
+[2026-11-08T10:59:16Z] DONE  downlink _ref04_cubic  2026-11-08T10:58:16Z -> 2026-11-08T10:59:16Z
+[2026-11-08T10:59:16Z] path for downlink/_ref04_cubic: samples=0 distinct_routes=0 [ ]
+[2026-11-08T10:59:17Z] wrapper output for downlink/_ref04_cubic: local=0B remote=0B
+[2026-11-08T10:59:17Z] disk left: 277G
+[2026-11-08T10:59:17Z] matrix finished; now run scripts/12_collect.sh

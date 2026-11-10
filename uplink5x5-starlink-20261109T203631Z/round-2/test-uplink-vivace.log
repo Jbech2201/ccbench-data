@@ -1,0 +1,26 @@
+$ /pantheon/src/experiments/git_summary.sh
+$ ssh pantheon@100.101.63.72 "cd /pantheon; /pantheon/src/experiments/git_summary.sh"
+Testing scheme vivace for experiment run 1/1...
+$ /pantheon/src/wrappers/vivace.py run_first
+$ ntpdate -t 5 -quv 202.65.114.202
+ 9 Nov 21:00:07 ntpdate[166]: ntpdate 4.2.8p10@1.3728-o (1)
+server 202.65.114.202, stratum 2, offset 0.001614, delay 0.06409
+ 9 Nov 21:00:22 ntpdate[166]: adjust time server 202.65.114.202 offset 0.001614 sec
+$ ssh pantheon@100.101.63.72 ntpdate -t 5 -quv 202.65.114.202
+ 9 Nov 21:00:23 ntpdate[168]: ntpdate 4.2.8p10@1.3728-o (1)
+server 202.65.114.202, stratum 2, offset 0.000361, delay 0.06410
+ 9 Nov 21:00:38 ntpdate[168]: adjust time server 202.65.114.202 offset 0.000361 sec
+[tunnel server manager (tsm)] $ ssh pantheon@100.101.63.72 python /pantheon/src/experiments/tunnel_manager.py
+tunnel manager is running
+[tunnel client manager (tcm)] $ python /pantheon/src/experiments/tunnel_manager.py
+tunnel manager is running
+prompt [tcm]
+prompt [tsm]
+[tsm] tunnel 1 mm-tunnelserver --ingress-log=/pantheon/tmp/vivace_datalink_run1_flow1_uide5043ca4-04b3-445e-afa9-7176b3d7e989.log.ingress --egress-log=/pantheon/tmp/vivace_acklink_run1_flow1_uide5043ca4-04b3-445e-afa9-7176b3d7e989.log.egress
+[tsm] tunnel 1 readline
+[tcm] tunnel 1 mm-tunnelclient 100.101.63.72 56777 100.64.0.2 100.64.0.1 --ingress-log=/pantheon/tmp/vivace_acklink_run1_flow1_uide5043ca4-04b3-445e-afa9-7176b3d7e989.log.ingress --egress-log=/pantheon/tmp/vivace_datalink_run1_flow1_uide5043ca4-04b3-445e-afa9-7176b3d7e989.log.egress
+[tcm] tunnel 1 readline
+Tunnelclient listening for server on port 32805
+Tunnel is connected
+[tsm] tunnel 1 python /pantheon/src/wrappers/vivace.py receiver 40693
+[tcm] tunnel 1 python /pantheon/src/wrappers/vivace.py sender 100.64.0.1 40693

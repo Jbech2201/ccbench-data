@@ -1,0 +1,44 @@
+$ /pantheon/src/experiments/git_summary.sh
+$ ssh pantheon@100.101.63.72 "cd /pantheon; /pantheon/src/experiments/git_summary.sh"
+Testing scheme vivace for experiment run 1/1...
+$ /pantheon/src/wrappers/vivace.py run_first
+$ ntpdate -t 5 -quv 202.65.114.202
+ 9 Nov 08:39:24 ntpdate[676]: ntpdate 4.2.8p10@1.3728-o (1)
+server 202.65.114.202, stratum 2, offset 0.000273, delay 0.06599
+ 9 Nov 08:39:39 ntpdate[676]: adjust time server 202.65.114.202 offset 0.000273 sec
+$ ssh pantheon@100.101.63.72 ntpdate -t 5 -quv 202.65.114.202
+ 9 Nov 08:39:40 ntpdate[584]: ntpdate 4.2.8p10@1.3728-o (1)
+server 202.65.114.202, stratum 2, offset -0.001452, delay 0.06592
+ 9 Nov 08:39:55 ntpdate[584]: adjust time server 202.65.114.202 offset -0.001452 sec
+[tunnel server manager (tsm)] $ ssh pantheon@100.101.63.72 python /pantheon/src/experiments/tunnel_manager.py
+tunnel manager is running
+[tunnel client manager (tcm)] $ python /pantheon/src/experiments/tunnel_manager.py
+tunnel manager is running
+prompt [tcm]
+prompt [tsm]
+[tsm] tunnel 1 mm-tunnelserver --ingress-log=/pantheon/tmp/vivace_datalink_run1_flow1_uid3de6c060-d89b-43fc-9e13-f7e581174907.log.ingress --egress-log=/pantheon/tmp/vivace_acklink_run1_flow1_uid3de6c060-d89b-43fc-9e13-f7e581174907.log.egress
+[tsm] tunnel 1 readline
+[tcm] tunnel 1 mm-tunnelclient 100.101.63.72 35447 100.64.0.2 100.64.0.1 --ingress-log=/pantheon/tmp/vivace_acklink_run1_flow1_uid3de6c060-d89b-43fc-9e13-f7e581174907.log.ingress --egress-log=/pantheon/tmp/vivace_datalink_run1_flow1_uid3de6c060-d89b-43fc-9e13-f7e581174907.log.egress
+[tcm] tunnel 1 readline
+Tunnelclient listening for server on port 53230
+Tunnel is connected
+[tsm] tunnel 1 python /pantheon/src/wrappers/vivace.py receiver 43785
+[tcm] tunnel 1 python /pantheon/src/wrappers/vivace.py sender 100.64.0.1 43785
+[tcm] halt
+$ scp -C pantheon@100.101.63.72:/pantheon/tmp/vivace_datalink_run1_flow1_uid3de6c060-d89b-43fc-9e13-f7e581174907.log.ingress /pantheon/tmp/vivace_datalink_run1_flow1_uid3de6c060-d89b-43fc-9e13-f7e581174907.log.ingress
+kill_proc_group: killed process group with pgid 680
+[tsm] halt
+kill_proc_group: killed process group with pgid 589
+$ scp -C pantheon@100.101.63.72:/pantheon/tmp/vivace_acklink_run1_flow1_uid3de6c060-d89b-43fc-9e13-f7e581174907.log.egress /pantheon/tmp/vivace_acklink_run1_flow1_uid3de6c060-d89b-43fc-9e13-f7e581174907.log.egress
+$ /pantheon/src/experiments/merge_tunnel_logs.py single -i /pantheon/tmp/vivace_datalink_run1_flow1_uid3de6c060-d89b-43fc-9e13-f7e581174907.log.ingress -e /pantheon/tmp/vivace_datalink_run1_flow1_uid3de6c060-d89b-43fc-9e13-f7e581174907.log.egress -o /pantheon/tmp/vivace_datalink_run1_flow1_uid5dfed0a8-f799-47a7-b521-eeacf8451328.log.merged -i-clock-offset -1.452 -e-clock-offset 0.273
+$ /pantheon/src/experiments/merge_tunnel_logs.py single -i /pantheon/tmp/vivace_acklink_run1_flow1_uid3de6c060-d89b-43fc-9e13-f7e581174907.log.ingress -e /pantheon/tmp/vivace_acklink_run1_flow1_uid3de6c060-d89b-43fc-9e13-f7e581174907.log.egress -o /pantheon/tmp/vivace_acklink_run1_flow1_uid5dfed0a8-f799-47a7-b521-eeacf8451328.log.merged -i-clock-offset 0.273 -e-clock-offset -1.452
+$ /pantheon/src/experiments/merge_tunnel_logs.py multiple -o /data/uplink/vivace/vivace_datalink_run1.log /pantheon/tmp/vivace_datalink_run1_flow1_uid5dfed0a8-f799-47a7-b521-eeacf8451328.log.merged
+$ /pantheon/src/experiments/merge_tunnel_logs.py multiple -o /data/uplink/vivace/vivace_acklink_run1.log /pantheon/tmp/vivace_acklink_run1_flow1_uid5dfed0a8-f799-47a7-b521-eeacf8451328.log.merged
+kill_proc_group: killed process group with pgid 678
+kill_proc_group: killed process group with pgid 679
+Start at: 2026-11-09 08:39:59
+End at: 2026-11-09 08:40:19
+Local clock offset: 0.273 ms
+Remote clock offset: -1.452 ms
+Done testing vivace
+All tests done!

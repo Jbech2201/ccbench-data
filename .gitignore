@@ -1,0 +1,3 @@
+# This is a benchmark data repo: the experiment's own logs are part of the data.
+# Re-include the *.log files ignored by the user's global gitignore.
+!*.log

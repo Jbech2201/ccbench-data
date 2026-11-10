@@ -1,0 +1,46 @@
+[2026-11-08T11:16:39Z] image: ccbench-remote:20261105T152436Z
+[2026-11-08T11:16:41Z] image identity matches on both hosts: layers=16105bbcee68ee78fdd20b20222bc94a9c243ff45d3c23de0fddf1d10677163d config=52633cc17b2be983b37cd746e20712529806ba65b214727029806eda7840504b
+[2026-11-08T11:16:41Z] disk here: 277G free
+[2026-11-08T11:16:42Z] starting peer container on cbr2@100.101.63.72
+2026-11-08T11:16:48Z peer sshd procs: 1
+[2026-11-08T11:16:49Z] peer container up (--privileged --device /dev/net/tun), key installed for pantheon, sshd on 2222
+[2026-11-08T11:16:49Z] starting local container
+[2026-11-08T11:16:52Z] per-scheme setup done on both sides
+[2026-11-08T11:16:52Z] interfaces: not pinned; the tunnel follows the route to 100.101.63.72
+[2026-11-08T11:16:52Z] order for uplink: taova 
+[2026-11-08T11:16:52Z] REFERENCE slot 00 (cubic, 20s)
+[2026-11-08T11:16:52Z] START uplink _ref00_cubic (--sender local, -t 20 x 1)
+[2026-11-08T11:17:52Z] DONE  uplink _ref00_cubic  2026-11-08T11:16:52Z -> 2026-11-08T11:17:52Z
+[2026-11-08T11:17:52Z] path for uplink/_ref00_cubic: samples=0 distinct_routes=0 [ ]
+[2026-11-08T11:17:54Z] wrapper output for uplink/_ref00_cubic: local=0B remote=0B
+[2026-11-08T11:17:54Z] disk left: 277G
+[2026-11-08T11:17:54Z] START uplink taova (--sender local, -t 20 x 1)
+[2026-11-08T11:18:53Z] DONE  uplink taova  2026-11-08T11:17:54Z -> 2026-11-08T11:18:53Z
+[2026-11-08T11:18:53Z] path for uplink/taova: samples=0 distinct_routes=0 [ ]
+[2026-11-08T11:18:54Z] wrapper output for uplink/taova: local=172B remote=55B
+[2026-11-08T11:18:54Z] disk left: 277G
+[2026-11-08T11:18:54Z] REFERENCE slot 01 (cubic, 20s)
+[2026-11-08T11:18:54Z] START uplink _ref01_cubic (--sender local, -t 20 x 1)
+[2026-11-08T11:19:57Z] DONE  uplink _ref01_cubic  2026-11-08T11:18:54Z -> 2026-11-08T11:19:57Z
+[2026-11-08T11:19:57Z] path for uplink/_ref01_cubic: samples=0 distinct_routes=0 [ ]
+[2026-11-08T11:19:58Z] wrapper output for uplink/_ref01_cubic: local=0B remote=0B
+[2026-11-08T11:19:58Z] disk left: 277G
+[2026-11-08T11:19:58Z] order for downlink: taova 
+[2026-11-08T11:19:58Z] REFERENCE slot 00 (cubic, 20s)
+[2026-11-08T11:19:58Z] START downlink _ref00_cubic (--sender remote, -t 20 x 1)
+[2026-11-08T11:20:58Z] DONE  downlink _ref00_cubic  2026-11-08T11:19:58Z -> 2026-11-08T11:20:58Z
+[2026-11-08T11:20:58Z] path for downlink/_ref00_cubic: samples=0 distinct_routes=0 [ ]
+[2026-11-08T11:20:59Z] wrapper output for downlink/_ref00_cubic: local=0B remote=0B
+[2026-11-08T11:20:59Z] disk left: 277G
+[2026-11-08T11:20:59Z] START downlink taova (--sender remote, -t 20 x 1)
+[2026-11-08T11:21:58Z] DONE  downlink taova  2026-11-08T11:20:59Z -> 2026-11-08T11:21:58Z
+[2026-11-08T11:21:58Z] path for downlink/taova: samples=0 distinct_routes=0 [ ]
+[2026-11-08T11:21:59Z] wrapper output for downlink/taova: local=55B remote=172B
+[2026-11-08T11:21:59Z] disk left: 277G
+[2026-11-08T11:21:59Z] REFERENCE slot 01 (cubic, 20s)
+[2026-11-08T11:21:59Z] START downlink _ref01_cubic (--sender remote, -t 20 x 1)
+[2026-11-08T11:22:59Z] DONE  downlink _ref01_cubic  2026-11-08T11:21:59Z -> 2026-11-08T11:22:59Z
+[2026-11-08T11:22:59Z] path for downlink/_ref01_cubic: samples=0 distinct_routes=0 [ ]
+[2026-11-08T11:22:59Z] wrapper output for downlink/_ref01_cubic: local=0B remote=0B
+[2026-11-08T11:23:00Z] disk left: 277G
+[2026-11-08T11:23:00Z] matrix finished; now run scripts/12_collect.sh

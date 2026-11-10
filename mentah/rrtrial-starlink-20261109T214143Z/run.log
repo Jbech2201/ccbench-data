@@ -1,0 +1,23 @@
+[2026-11-09T21:41:55Z] image: ccbench-remote:20261105T152436Z
+[2026-11-09T21:41:56Z] image identity matches on both hosts: layers=16105bbcee68ee78fdd20b20222bc94a9c243ff45d3c23de0fddf1d10677163d config=52633cc17b2be983b37cd746e20712529806ba65b214727029806eda7840504b
+[2026-11-09T21:41:56Z] disk here: 262G free
+[2026-11-09T21:41:57Z] path at start: pong from cbr2server (100.101.63.72) via 202.4.186.8:41641 in 100ms
+[2026-11-09T21:41:57Z] starting peer container on cbr2@100.101.63.72
+2026-11-09T21:42:04Z peer sshd procs: 1
+[2026-11-09T21:42:05Z] peer container up (--privileged --device /dev/net/tun), key installed for pantheon, sshd on 2222
+[2026-11-09T21:42:05Z] starting local container
+[2026-11-09T21:42:08Z] per-scheme setup done on both sides
+[2026-11-09T21:42:08Z] interfaces: not pinned; the tunnel follows the route to 100.101.63.72
+[2026-11-09T21:42:08Z] ROUND 1/2 uplink
+[2026-11-09T21:42:08Z] START uplink rr-1 (--sender local, -t 30 x 1)
+[2026-11-09T21:47:54Z] DONE  uplink rr-1  2026-11-09T21:42:08Z -> 2026-11-09T21:47:54Z
+[2026-11-09T21:47:54Z] path for uplink/rr-1: samples=64 distinct_routes=1 [ 202.4.186.8:41641 ]
+[2026-11-09T21:47:55Z] wrapper output for uplink/rr-1: local=9389B remote=470B
+[2026-11-09T21:47:55Z] disk left: 262G
+[2026-11-09T21:47:55Z] ROUND 2/2 uplink
+[2026-11-09T21:47:55Z] START uplink rr-2 (--sender local, -t 30 x 1)
+[2026-11-09T21:52:34Z] DONE  uplink rr-2  2026-11-09T21:47:55Z -> 2026-11-09T21:52:34Z
+[2026-11-09T21:52:34Z] path for uplink/rr-2: samples=55 distinct_routes=1 [ 202.4.186.8:41641 ]
+[2026-11-09T21:52:35Z] wrapper output for uplink/rr-2: local=9451B remote=470B
+[2026-11-09T21:52:35Z] disk left: 262G
+[2026-11-09T21:52:35Z] matrix finished; now run scripts/12_collect.sh

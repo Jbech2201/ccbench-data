@@ -1,0 +1,141 @@
+[2026-11-09T19:50:32Z] image: ccbench-remote:20261105T152436Z
+[2026-11-09T19:50:34Z] image identity matches on both hosts: layers=16105bbcee68ee78fdd20b20222bc94a9c243ff45d3c23de0fddf1d10677163d config=52633cc17b2be983b37cd746e20712529806ba65b214727029806eda7840504b
+[2026-11-09T19:50:34Z] disk here: 262G free
+[2026-11-09T19:50:34Z] path at start: pong from cbr2server (100.101.63.72) via 202.4.186.8:41641 in 78ms
+[2026-11-09T19:50:34Z] starting peer container on cbr2@100.101.63.72
+2026-11-09T19:50:41Z peer sshd procs: 1
+[2026-11-09T19:50:42Z] peer container up (--privileged --device /dev/net/tun), key installed for pantheon, sshd on 2222
+[2026-11-09T19:50:42Z] starting local container
+[2026-11-09T19:50:46Z] per-scheme setup done on both sides
+[2026-11-09T19:50:46Z] interfaces: not pinned; the tunnel follows the route to 100.101.63.72
+[2026-11-09T19:50:46Z] order for uplink: taova pcc vivace indigo 
+[2026-11-09T19:50:46Z] REFERENCE slot 00 (cubic, 10s)
+[2026-11-09T19:50:46Z] START uplink _ref00_cubic (--sender local, -t 10 x 1)
+[2026-11-09T19:51:38Z] DONE  uplink _ref00_cubic  2026-11-09T19:50:46Z -> 2026-11-09T19:51:38Z
+[2026-11-09T19:51:38Z] path for uplink/_ref00_cubic: samples=11 distinct_routes=1 [ 202.4.186.8:41641 ]
+[2026-11-09T19:51:39Z] wrapper output for uplink/_ref00_cubic: local=0B remote=0B
+204K	/home/pep-admin/gladi4-starlink-20261109T195032Z/data/uplink/_ref00_cubic
+[2026-11-09T19:51:39Z] disk left: 262G
+[2026-11-09T19:51:39Z] START uplink taova (--sender local, -t 10 x 1)
+[2026-11-09T19:52:29Z] DONE  uplink taova  2026-11-09T19:51:39Z -> 2026-11-09T19:52:29Z
+[2026-11-09T19:52:29Z] path for uplink/taova: samples=10 distinct_routes=1 [ 202.4.186.8:41641 ]
+[2026-11-09T19:52:30Z] wrapper output for uplink/taova: local=172B remote=55B
+212K	/home/pep-admin/gladi4-starlink-20261109T195032Z/data/uplink/taova
+[2026-11-09T19:52:30Z] disk left: 262G
+[2026-11-09T19:52:30Z] REFERENCE slot 01 (cubic, 10s)
+[2026-11-09T19:52:30Z] START uplink _ref01_cubic (--sender local, -t 10 x 1)
+[2026-11-09T19:53:22Z] DONE  uplink _ref01_cubic  2026-11-09T19:52:30Z -> 2026-11-09T19:53:22Z
+[2026-11-09T19:53:22Z] path for uplink/_ref01_cubic: samples=11 distinct_routes=1 [ 202.4.186.8:41641 ]
+[2026-11-09T19:53:23Z] wrapper output for uplink/_ref01_cubic: local=0B remote=0B
+192K	/home/pep-admin/gladi4-starlink-20261109T195032Z/data/uplink/_ref01_cubic
+[2026-11-09T19:53:23Z] disk left: 262G
+[2026-11-09T19:53:23Z] START uplink pcc (--sender local, -t 10 x 1)
+[2026-11-09T19:54:13Z] DONE  uplink pcc  2026-11-09T19:53:23Z -> 2026-11-09T19:54:13Z
+[2026-11-09T19:54:13Z] path for uplink/pcc: samples=10 distinct_routes=1 [ 202.4.186.8:41641 ]
+[2026-11-09T19:54:14Z] wrapper output for uplink/pcc: local=926B remote=178B
+1.1M	/home/pep-admin/gladi4-starlink-20261109T195032Z/data/uplink/pcc
+[2026-11-09T19:54:14Z] disk left: 262G
+[2026-11-09T19:54:14Z] REFERENCE slot 02 (cubic, 10s)
+[2026-11-09T19:54:14Z] START uplink _ref02_cubic (--sender local, -t 10 x 1)
+[2026-11-09T19:55:06Z] DONE  uplink _ref02_cubic  2026-11-09T19:54:14Z -> 2026-11-09T19:55:06Z
+[2026-11-09T19:55:06Z] path for uplink/_ref02_cubic: samples=11 distinct_routes=1 [ 202.4.186.8:41641 ]
+[2026-11-09T19:55:07Z] wrapper output for uplink/_ref02_cubic: local=0B remote=0B
+144K	/home/pep-admin/gladi4-starlink-20261109T195032Z/data/uplink/_ref02_cubic
+[2026-11-09T19:55:07Z] disk left: 262G
+[2026-11-09T19:55:07Z] START uplink vivace (--sender local, -t 10 x 1)
+[2026-11-09T19:55:57Z] DONE  uplink vivace  2026-11-09T19:55:07Z -> 2026-11-09T19:55:57Z
+[2026-11-09T19:55:57Z] path for uplink/vivace: samples=10 distinct_routes=1 [ 202.4.186.8:41641 ]
+[2026-11-09T19:55:58Z] wrapper output for uplink/vivace: local=335B remote=181B
+248K	/home/pep-admin/gladi4-starlink-20261109T195032Z/data/uplink/vivace
+[2026-11-09T19:55:58Z] disk left: 262G
+[2026-11-09T19:55:58Z] REFERENCE slot 03 (cubic, 10s)
+[2026-11-09T19:55:58Z] START uplink _ref03_cubic (--sender local, -t 10 x 1)
+[2026-11-09T19:56:49Z] DONE  uplink _ref03_cubic  2026-11-09T19:55:58Z -> 2026-11-09T19:56:49Z
+[2026-11-09T19:56:49Z] path for uplink/_ref03_cubic: samples=11 distinct_routes=1 [ 202.4.186.8:41641 ]
+[2026-11-09T19:56:50Z] wrapper output for uplink/_ref03_cubic: local=0B remote=0B
+136K	/home/pep-admin/gladi4-starlink-20261109T195032Z/data/uplink/_ref03_cubic
+[2026-11-09T19:56:50Z] disk left: 262G
+[2026-11-09T19:56:50Z] START uplink indigo (--sender local, -t 10 x 1)
+[2026-11-09T19:57:41Z] DONE  uplink indigo  2026-11-09T19:56:50Z -> 2026-11-09T19:57:41Z
+[2026-11-09T19:57:41Z] path for uplink/indigo: samples=10 distinct_routes=1 [ 202.4.186.8:41641 ]
+[2026-11-09T19:57:42Z] wrapper output for uplink/indigo: local=5667B remote=57B
+408K	/home/pep-admin/gladi4-starlink-20261109T195032Z/data/uplink/indigo
+[2026-11-09T19:57:42Z] disk left: 262G
+[2026-11-09T19:57:42Z] REFERENCE slot 04 (cubic, 10s)
+[2026-11-09T19:57:42Z] START uplink _ref04_cubic (--sender local, -t 10 x 1)
+[2026-11-09T19:58:34Z] DONE  uplink _ref04_cubic  2026-11-09T19:57:42Z -> 2026-11-09T19:58:34Z
+[2026-11-09T19:58:34Z] path for uplink/_ref04_cubic: samples=11 distinct_routes=1 [ 202.4.186.8:41641 ]
+[2026-11-09T19:58:35Z] wrapper output for uplink/_ref04_cubic: local=0B remote=0B
+252K	/home/pep-admin/gladi4-starlink-20261109T195032Z/data/uplink/_ref04_cubic
+[2026-11-09T19:58:35Z] disk left: 262G
+[2026-11-09T19:58:35Z] order for downlink: taova pcc indigo vivace 
+[2026-11-09T19:58:35Z] REFERENCE slot 00 (cubic, 10s)
+[2026-11-09T19:58:35Z] START downlink _ref00_cubic (--sender remote, -t 10 x 1)
+[2026-11-09T19:59:28Z] DONE  downlink _ref00_cubic  2026-11-09T19:58:35Z -> 2026-11-09T19:59:28Z
+[2026-11-09T19:59:28Z] path for downlink/_ref00_cubic: samples=11 distinct_routes=1 [ 202.4.186.8:41641 ]
+[2026-11-09T19:59:29Z] wrapper output for downlink/_ref00_cubic: local=0B remote=0B
+1.6M	/home/pep-admin/gladi4-starlink-20261109T195032Z/data/downlink/_ref00_cubic
+[2026-11-09T19:59:29Z] disk left: 262G
+[2026-11-09T19:59:29Z] START downlink taova (--sender remote, -t 10 x 1)
+[2026-11-09T20:00:19Z] DONE  downlink taova  2026-11-09T19:59:29Z -> 2026-11-09T20:00:19Z
+[2026-11-09T20:00:19Z] path for downlink/taova: samples=10 distinct_routes=1 [ 202.4.186.8:41641 ]
+[2026-11-09T20:00:20Z] wrapper output for downlink/taova: local=56B remote=173B
+204K	/home/pep-admin/gladi4-starlink-20261109T195032Z/data/downlink/taova
+[2026-11-09T20:00:20Z] disk left: 262G
+[2026-11-09T20:00:20Z] REFERENCE slot 01 (cubic, 10s)
+[2026-11-09T20:00:20Z] START downlink _ref01_cubic (--sender remote, -t 10 x 1)
+[2026-11-09T20:01:14Z] DONE  downlink _ref01_cubic  2026-11-09T20:00:20Z -> 2026-11-09T20:01:14Z
+[2026-11-09T20:01:14Z] path for downlink/_ref01_cubic: samples=11 distinct_routes=2 [ 202.4.186.8:41641 DERP(sin) ]
+[2026-11-09T20:01:14Z] WARNING downlink/_ref01_cubic saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T20:01:14Z] WARNING downlink/_ref01_cubic CHANGED ROUTE mid-run; do not compare it against another scheme (docs/decisions/008)
+[2026-11-09T20:01:14Z] wrapper output for downlink/_ref01_cubic: local=0B remote=0B
+1.4M	/home/pep-admin/gladi4-starlink-20261109T195032Z/data/downlink/_ref01_cubic
+[2026-11-09T20:01:14Z] disk left: 262G
+[2026-11-09T20:01:14Z] START downlink pcc (--sender remote, -t 10 x 1)
+[2026-11-09T20:02:02Z] DONE  downlink pcc  2026-11-09T20:01:14Z -> 2026-11-09T20:02:02Z
+[2026-11-09T20:02:02Z] path for downlink/pcc: samples=8 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T20:02:02Z] WARNING downlink/pcc saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T20:02:02Z] wrapper output for downlink/pcc: local=179B remote=1280B
+264K	/home/pep-admin/gladi4-starlink-20261109T195032Z/data/downlink/pcc
+[2026-11-09T20:02:02Z] disk left: 262G
+[2026-11-09T20:02:02Z] REFERENCE slot 02 (cubic, 10s)
+[2026-11-09T20:02:02Z] START downlink _ref02_cubic (--sender remote, -t 10 x 1)
+[2026-11-09T20:02:52Z] DONE  downlink _ref02_cubic  2026-11-09T20:02:02Z -> 2026-11-09T20:02:52Z
+[2026-11-09T20:02:52Z] path for downlink/_ref02_cubic: samples=8 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T20:02:52Z] WARNING downlink/_ref02_cubic saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T20:02:53Z] wrapper output for downlink/_ref02_cubic: local=0B remote=0B
+340K	/home/pep-admin/gladi4-starlink-20261109T195032Z/data/downlink/_ref02_cubic
+[2026-11-09T20:02:53Z] disk left: 262G
+[2026-11-09T20:02:53Z] START downlink indigo (--sender remote, -t 10 x 1)
+[2026-11-09T20:03:40Z] DONE  downlink indigo  2026-11-09T20:02:53Z -> 2026-11-09T20:03:40Z
+[2026-11-09T20:03:40Z] path for downlink/indigo: samples=8 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T20:03:40Z] WARNING downlink/indigo saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T20:03:41Z] wrapper output for downlink/indigo: local=57B remote=5667B
+484K	/home/pep-admin/gladi4-starlink-20261109T195032Z/data/downlink/indigo
+[2026-11-09T20:03:41Z] disk left: 262G
+[2026-11-09T20:03:41Z] REFERENCE slot 03 (cubic, 10s)
+[2026-11-09T20:03:41Z] START downlink _ref03_cubic (--sender remote, -t 10 x 1)
+[2026-11-09T20:04:30Z] DONE  downlink _ref03_cubic  2026-11-09T20:03:41Z -> 2026-11-09T20:04:30Z
+[2026-11-09T20:04:30Z] path for downlink/_ref03_cubic: samples=8 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T20:04:30Z] WARNING downlink/_ref03_cubic saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T20:04:31Z] wrapper output for downlink/_ref03_cubic: local=0B remote=0B
+400K	/home/pep-admin/gladi4-starlink-20261109T195032Z/data/downlink/_ref03_cubic
+[2026-11-09T20:04:31Z] disk left: 262G
+[2026-11-09T20:04:31Z] START downlink vivace (--sender remote, -t 10 x 1)
+[2026-11-09T20:05:19Z] DONE  downlink vivace  2026-11-09T20:04:31Z -> 2026-11-09T20:05:19Z
+[2026-11-09T20:05:19Z] path for downlink/vivace: samples=8 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T20:05:19Z] WARNING downlink/vivace saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T20:05:19Z] wrapper output for downlink/vivace: local=182B remote=333B
+504K	/home/pep-admin/gladi4-starlink-20261109T195032Z/data/downlink/vivace
+[2026-11-09T20:05:19Z] disk left: 262G
+[2026-11-09T20:05:19Z] REFERENCE slot 04 (cubic, 10s)
+[2026-11-09T20:05:19Z] START downlink _ref04_cubic (--sender remote, -t 10 x 1)
+[2026-11-09T20:06:09Z] DONE  downlink _ref04_cubic  2026-11-09T20:05:19Z -> 2026-11-09T20:06:09Z
+[2026-11-09T20:06:09Z] path for downlink/_ref04_cubic: samples=9 distinct_routes=1 [ DERP(sin) ]
+[2026-11-09T20:06:09Z] WARNING downlink/_ref04_cubic saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T20:06:10Z] wrapper output for downlink/_ref04_cubic: local=0B remote=0B
+404K	/home/pep-admin/gladi4-starlink-20261109T195032Z/data/downlink/_ref04_cubic
+[2026-11-09T20:06:10Z] disk left: 262G
+[2026-11-09T20:06:10Z] matrix finished; now run scripts/12_collect.sh
+/home/pep-admin/gladi4-starlink-20261109T195032Z
+MATRIX_EXIT=0

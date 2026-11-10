@@ -1,0 +1,45 @@
+$ /pantheon/src/experiments/git_summary.sh
+$ ssh pantheon@100.101.63.72 "cd /pantheon; /pantheon/src/experiments/git_summary.sh"
+Testing scheme cubic for experiment run 1/1...
+$ /pantheon/src/wrappers/cubic.py run_first
+$ ntpdate -t 5 -quv 202.65.114.202
+ 9 Nov 19:54:15 ntpdate[749]: ntpdate 4.2.8p10@1.3728-o (1)
+server 202.65.114.202, stratum 2, offset 0.000015, delay 0.06584
+ 9 Nov 19:54:30 ntpdate[749]: adjust time server 202.65.114.202 offset 0.000015 sec
+$ ssh pantheon@100.101.63.72 ntpdate -t 5 -quv 202.65.114.202
+ 9 Nov 19:54:31 ntpdate[694]: ntpdate 4.2.8p10@1.3728-o (1)
+server 202.65.114.202, stratum 2, offset 0.001242, delay 0.06607
+ 9 Nov 19:54:47 ntpdate[694]: adjust time server 202.65.114.202 offset 0.001242 sec
+[tunnel server manager (tsm)] $ ssh pantheon@100.101.63.72 python /pantheon/src/experiments/tunnel_manager.py
+tunnel manager is running
+[tunnel client manager (tcm)] $ python /pantheon/src/experiments/tunnel_manager.py
+tunnel manager is running
+prompt [tcm]
+prompt [tsm]
+[tsm] tunnel 1 mm-tunnelserver --ingress-log=/pantheon/tmp/cubic_datalink_run1_flow1_uid88c36e60-1e68-40b2-9703-1da73babcb24.log.ingress --egress-log=/pantheon/tmp/cubic_acklink_run1_flow1_uid88c36e60-1e68-40b2-9703-1da73babcb24.log.egress
+[tsm] tunnel 1 readline
+[tcm] tunnel 1 mm-tunnelclient 100.101.63.72 40754 100.64.0.2 100.64.0.1 --ingress-log=/pantheon/tmp/cubic_acklink_run1_flow1_uid88c36e60-1e68-40b2-9703-1da73babcb24.log.ingress --egress-log=/pantheon/tmp/cubic_datalink_run1_flow1_uid88c36e60-1e68-40b2-9703-1da73babcb24.log.egress
+[tcm] tunnel 1 readline
+Tunnelclient listening for server on port 52403
+Tunnel is connected
+[tsm] tunnel 1 python /pantheon/src/wrappers/cubic.py receiver 38299
+[tcm] tunnel 1 python /pantheon/src/wrappers/cubic.py sender 100.64.0.1 38299
+[tcm] halt
+$ scp -C pantheon@100.101.63.72:/pantheon/tmp/cubic_datalink_run1_flow1_uid88c36e60-1e68-40b2-9703-1da73babcb24.log.ingress /pantheon/tmp/cubic_datalink_run1_flow1_uid88c36e60-1e68-40b2-9703-1da73babcb24.log.ingress
+kill_proc_group: killed process group with pgid 753
+[tsm] halt
+kill_proc_group: killed process group with pgid 699
+Waiting for server threads to complete. Interrupt again to force quit.
+$ scp -C pantheon@100.101.63.72:/pantheon/tmp/cubic_acklink_run1_flow1_uid88c36e60-1e68-40b2-9703-1da73babcb24.log.egress /pantheon/tmp/cubic_acklink_run1_flow1_uid88c36e60-1e68-40b2-9703-1da73babcb24.log.egress
+$ /pantheon/src/experiments/merge_tunnel_logs.py single -i /pantheon/tmp/cubic_datalink_run1_flow1_uid88c36e60-1e68-40b2-9703-1da73babcb24.log.ingress -e /pantheon/tmp/cubic_datalink_run1_flow1_uid88c36e60-1e68-40b2-9703-1da73babcb24.log.egress -o /pantheon/tmp/cubic_datalink_run1_flow1_uid4c4953b0-0394-46af-857e-888f0cbba500.log.merged -i-clock-offset 1.242 -e-clock-offset 0.015
+$ /pantheon/src/experiments/merge_tunnel_logs.py single -i /pantheon/tmp/cubic_acklink_run1_flow1_uid88c36e60-1e68-40b2-9703-1da73babcb24.log.ingress -e /pantheon/tmp/cubic_acklink_run1_flow1_uid88c36e60-1e68-40b2-9703-1da73babcb24.log.egress -o /pantheon/tmp/cubic_acklink_run1_flow1_uid4c4953b0-0394-46af-857e-888f0cbba500.log.merged -i-clock-offset 0.015 -e-clock-offset 1.242
+$ /pantheon/src/experiments/merge_tunnel_logs.py multiple -o /data/uplink/_ref02_cubic/cubic_datalink_run1.log /pantheon/tmp/cubic_datalink_run1_flow1_uid4c4953b0-0394-46af-857e-888f0cbba500.log.merged
+$ /pantheon/src/experiments/merge_tunnel_logs.py multiple -o /data/uplink/_ref02_cubic/cubic_acklink_run1.log /pantheon/tmp/cubic_acklink_run1_flow1_uid4c4953b0-0394-46af-857e-888f0cbba500.log.merged
+kill_proc_group: killed process group with pgid 751
+kill_proc_group: killed process group with pgid 752
+Start at: 2026-11-09 19:54:51
+End at: 2026-11-09 19:55:01
+Local clock offset: 0.015 ms
+Remote clock offset: 1.242 ms
+Done testing cubic
+All tests done!

@@ -1,0 +1,12 @@
+[2026-11-09T20:59:53Z] image: ccbench-remote:20261105T152436Z
+[2026-11-09T20:59:54Z] image identity matches on both hosts: layers=16105bbcee68ee78fdd20b20222bc94a9c243ff45d3c23de0fddf1d10677163d config=52633cc17b2be983b37cd746e20712529806ba65b214727029806eda7840504b
+[2026-11-09T20:59:54Z] disk here: 262G free
+[2026-11-09T20:59:54Z] path at start: pong from cbr2server (100.101.63.72) via 202.4.186.8:41641 in 64ms
+[2026-11-09T20:59:54Z] starting peer container on cbr2@100.101.63.72
+2026-11-09T21:00:02Z peer sshd procs: 1
+[2026-11-09T21:00:03Z] peer container up (--privileged --device /dev/net/tun), key installed for pantheon, sshd on 2222
+[2026-11-09T21:00:03Z] starting local container
+[2026-11-09T21:00:06Z] per-scheme setup done on both sides
+[2026-11-09T21:00:06Z] interfaces: not pinned; the tunnel follows the route to 100.101.63.72
+[2026-11-09T21:00:06Z] order for uplink: vivace taova pcc indigo 
+[2026-11-09T21:00:06Z] START uplink vivace (--sender local, -t 300 x 1)

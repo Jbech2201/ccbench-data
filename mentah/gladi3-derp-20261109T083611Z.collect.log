@@ -1,0 +1,1639 @@
+mesg: ttyname failed: Inappropriate ioctl for device
+== installing texlive-latex-recommended for the report PDF
+mesg: ttyname failed: Inappropriate ioctl for device
+/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+== applying patches/0005 (report.py EXDEV) in the analysis container
+REPORT_EXDEV_ALREADY_PATCHED
+== analysing uplink/indigo
+mesg: ttyname failed: Inappropriate ioctl for device
+$ python /pantheon/src/analysis/plot.py --data-dir /data/uplink/indigo
+$ tunnel_graph /data/uplink/indigo/indigo_datalink_run1.log
+Appended datalink statistics to stats files in /data/uplink/indigo
+Saved throughput graphs, delay graphs, and summary graphs in /data/uplink/indigo
+$ python /pantheon/src/analysis/report.py --data-dir /data/uplink/indigo
+$ uname -sr
+$ sysctl net.core.default_qdisc
+$ sysctl net.core.rmem_default
+$ sysctl net.core.rmem_max
+$ sysctl net.core.wmem_default
+$ sysctl net.core.wmem_max
+$ sysctl net.ipv4.tcp_rmem
+$ sysctl net.ipv4.tcp_wmem
+$ pdflatex -halt-on-error -jobname pantheon_report_df8a58b4-3f56-4dce-a65b-45fa7d7f6209 /pantheon/tmp/pantheon_report_df8a58b4-3f56-4dce-a65b-45fa7d7f6209.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/pantheon/tmp/pantheon_report_df8a58b4-3f56-4dce-a65b-45fa7d7f6209.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+No file pantheon_report_df8a58b4-3f56-4dce-a65b-45fa7d7f6209.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 51--51
+[]\OT1/cmtt/m/n/10 third_party/pantheon-tunnel @ f866d3f58d27afd942717625ee3a35
+4cc2e802bd[] 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </data/uplink/indigo/
+pantheon_summary_mean.pdf> </data/uplink/indigo/pantheon_summary.pdf
+
+pdfTeX warning: pdflatex (file /data/uplink/indigo/pantheon_summary.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+>] [3] [4] [5 </data/uplink/indigo/indigo_datalink_throughput_run1.png> </data/
+uplink/indigo/indigo_datalink_delay_run1.png>]
+(./pantheon_report_df8a58b4-3f56-4dce-a65b-45fa7d7f6209.aux)
+kpathsea: Running mktexpk --mfmode / --bdpi 600 --mag 1+0/600 --dpi 600 tcrm1000
+mktexpk: Running mf-nowin -progname=mf \mode:=ljfour; mag:=1+0/600; nonstopmode; input tcrm1000
+This is METAFONT, Version 2.7182818 (TeX Live 2017/Debian) (preloaded base=mf)
+
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/tcrm1000.mf
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exbase.mf)
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/tcrm.mf
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/txsymb.mf
+ Ok (/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exaccess.mf
+ Ok) (/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/txpseudo.mf
+ Ok) (/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/txaccent.mf
+ Ok [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [27] [29])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/txgen.mf
+ Ok [100] [109] [98] [99] [108])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/txsymbol.mf
+ Ok [13] [18] [21] [22] [23] [24] [25] [26] [28] [31] [32] [36] [39] [44]
+[45] [46] [42] [47] [60] [61] [62] [77] [79] [87] [110] [91] [93] [94] [95]
+[96] [126] [127] [128] [129] [130] [131] [132] [133] [134] [135] [136] [137]
+[138] [139] [140] [141] [142] [143] [144] [145] [146] [147] [148] [149]
+[150] [151] [152] [153] [154] [155] [156] [157] [158] [159] [160] [161]
+[162] [163] [164] [165] [166] [167] [168] [169] [171] [172] [173] [174]
+[175] [177] [176] [180] [181] [182] [183] [184] [187] [191] [214] [246])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/txromod.mf
+ Ok [48] [49] [50] [51] [52] [53] [54] [55] [56] [57])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/txrsuper.mf
+ Ok [185] [178] [179] [170] [186])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/txrfract.mf
+ Ok [188] [189] [190]) ) ) )
+(some charht values had to be adjusted by as much as 0.06943pt)
+Font metrics written on tcrm1000.tfm.
+Output written on tcrm1000.600gf (128 characters, 23548 bytes).
+Transcript written on tcrm1000.log.
+mktexpk: /root/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk: successfully generated.
+ )
+(see the transcript file for additional information) </root/.texlive2017/texmf-
+var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on pantheon_report_df8a58b4-3f56-4dce-a65b-45fa7d7f6209.pdf (5 p
+ages, 169974 bytes).
+Transcript written on pantheon_report_df8a58b4-3f56-4dce-a65b-45fa7d7f6209.log.
+
+Saved pantheon_report.pdf in /data/uplink/indigo
+ANALYSIS_RC 0
+ANALYSIS_WALL_S 1.4
+ANALYSIS_PEAK_RSS_MB 102.7
+== analysing uplink/pcc
+mesg: ttyname failed: Inappropriate ioctl for device
+$ python /pantheon/src/analysis/plot.py --data-dir /data/uplink/pcc
+$ tunnel_graph /data/uplink/pcc/pcc_datalink_run1.log
+Appended datalink statistics to stats files in /data/uplink/pcc
+Saved throughput graphs, delay graphs, and summary graphs in /data/uplink/pcc
+$ python /pantheon/src/analysis/report.py --data-dir /data/uplink/pcc
+$ uname -sr
+$ sysctl net.core.default_qdisc
+$ sysctl net.core.rmem_default
+$ sysctl net.core.rmem_max
+$ sysctl net.core.wmem_default
+$ sysctl net.core.wmem_max
+$ sysctl net.ipv4.tcp_rmem
+$ sysctl net.ipv4.tcp_wmem
+$ pdflatex -halt-on-error -jobname pantheon_report_921266e2-fbc8-4484-92ce-d03a882a2ef1 /pantheon/tmp/pantheon_report_921266e2-fbc8-4484-92ce-d03a882a2ef1.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/pantheon/tmp/pantheon_report_921266e2-fbc8-4484-92ce-d03a882a2ef1.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+No file pantheon_report_921266e2-fbc8-4484-92ce-d03a882a2ef1.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 51--51
+[]\OT1/cmtt/m/n/10 third_party/pantheon-tunnel @ f866d3f58d27afd942717625ee3a35
+4cc2e802bd[] 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </data/uplink/pcc/pan
+theon_summary_mean.pdf> </data/uplink/pcc/pantheon_summary.pdf
+
+pdfTeX warning: pdflatex (file /data/uplink/pcc/pantheon_summary.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
+>] [3] [4] [5 </data/uplink/pcc/pcc_datalink_throughput_run1.png> </data/uplink
+/pcc/pcc_datalink_delay_run1.png>]
+(./pantheon_report_921266e2-fbc8-4484-92ce-d03a882a2ef1.aux) )
+(see the transcript file for additional information) </root/.texlive2017/texmf-
+var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on pantheon_report_921266e2-fbc8-4484-92ce-d03a882a2ef1.pdf (5 p
+ages, 169276 bytes).
+Transcript written on pantheon_report_921266e2-fbc8-4484-92ce-d03a882a2ef1.log.
+
+Saved pantheon_report.pdf in /data/uplink/pcc
+ANALYSIS_RC 0
+ANALYSIS_WALL_S 1.1
+ANALYSIS_PEAK_RSS_MB 103.2
+== analysing uplink/_ref00_cubic
+mesg: ttyname failed: Inappropriate ioctl for device
+$ python /pantheon/src/analysis/plot.py --data-dir /data/uplink/_ref00_cubic
+$ tunnel_graph /data/uplink/_ref00_cubic/cubic_datalink_run1.log
+Appended datalink statistics to stats files in /data/uplink/_ref00_cubic
+Saved throughput graphs, delay graphs, and summary graphs in /data/uplink/_ref00_cubic
+$ python /pantheon/src/analysis/report.py --data-dir /data/uplink/_ref00_cubic
+$ uname -sr
+$ sysctl net.core.default_qdisc
+$ sysctl net.core.rmem_default
+$ sysctl net.core.rmem_max
+$ sysctl net.core.wmem_default
+$ sysctl net.core.wmem_max
+$ sysctl net.ipv4.tcp_rmem
+$ sysctl net.ipv4.tcp_wmem
+$ pdflatex -halt-on-error -jobname pantheon_report_8e440f60-4485-42ef-8dd5-0fd228d9611b /pantheon/tmp/pantheon_report_8e440f60-4485-42ef-8dd5-0fd228d9611b.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/pantheon/tmp/pantheon_report_8e440f60-4485-42ef-8dd5-0fd228d9611b.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+No file pantheon_report_8e440f60-4485-42ef-8dd5-0fd228d9611b.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 51--51
+[]\OT1/cmtt/m/n/10 third_party/pantheon-tunnel @ f866d3f58d27afd942717625ee3a35
+4cc2e802bd[] 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </data/uplink/_ref00_
+cubic/pantheon_summary_mean.pdf> </data/uplink/_ref00_cubic/pantheon_summary.pd
+f
+
+pdfTeX warning: pdflatex (file /data/uplink/_ref00_cubic/pantheon_summary.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+>] [3] [4] [5 </data/uplink/_ref00_cubic/cubic_datalink_throughput_run1.png> </
+data/uplink/_ref00_cubic/cubic_datalink_delay_run1.png>]
+(./pantheon_report_8e440f60-4485-42ef-8dd5-0fd228d9611b.aux) )
+(see the transcript file for additional information) </root/.texlive2017/texmf-
+var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on pantheon_report_8e440f60-4485-42ef-8dd5-0fd228d9611b.pdf (5 p
+ages, 188575 bytes).
+Transcript written on pantheon_report_8e440f60-4485-42ef-8dd5-0fd228d9611b.log.
+
+Saved pantheon_report.pdf in /data/uplink/_ref00_cubic
+ANALYSIS_RC 0
+ANALYSIS_WALL_S 1.2
+ANALYSIS_PEAK_RSS_MB 103.1
+== analysing uplink/_ref01_cubic
+mesg: ttyname failed: Inappropriate ioctl for device
+$ python /pantheon/src/analysis/plot.py --data-dir /data/uplink/_ref01_cubic
+$ tunnel_graph /data/uplink/_ref01_cubic/cubic_datalink_run1.log
+Appended datalink statistics to stats files in /data/uplink/_ref01_cubic
+Saved throughput graphs, delay graphs, and summary graphs in /data/uplink/_ref01_cubic
+$ python /pantheon/src/analysis/report.py --data-dir /data/uplink/_ref01_cubic
+$ uname -sr
+$ sysctl net.core.default_qdisc
+$ sysctl net.core.rmem_default
+$ sysctl net.core.rmem_max
+$ sysctl net.core.wmem_default
+$ sysctl net.core.wmem_max
+$ sysctl net.ipv4.tcp_rmem
+$ sysctl net.ipv4.tcp_wmem
+$ pdflatex -halt-on-error -jobname pantheon_report_e8b41516-ea5b-44b4-8147-a98414a73941 /pantheon/tmp/pantheon_report_e8b41516-ea5b-44b4-8147-a98414a73941.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/pantheon/tmp/pantheon_report_e8b41516-ea5b-44b4-8147-a98414a73941.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+No file pantheon_report_e8b41516-ea5b-44b4-8147-a98414a73941.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 51--51
+[]\OT1/cmtt/m/n/10 third_party/pantheon-tunnel @ f866d3f58d27afd942717625ee3a35
+4cc2e802bd[] 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </data/uplink/_ref01_
+cubic/pantheon_summary_mean.pdf> </data/uplink/_ref01_cubic/pantheon_summary.pd
+f
+
+pdfTeX warning: pdflatex (file /data/uplink/_ref01_cubic/pantheon_summary.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+>] [3] [4] [5 </data/uplink/_ref01_cubic/cubic_datalink_throughput_run1.png> </
+data/uplink/_ref01_cubic/cubic_datalink_delay_run1.png>]
+(./pantheon_report_e8b41516-ea5b-44b4-8147-a98414a73941.aux) )
+(see the transcript file for additional information) </root/.texlive2017/texmf-
+var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on pantheon_report_e8b41516-ea5b-44b4-8147-a98414a73941.pdf (5 p
+ages, 185378 bytes).
+Transcript written on pantheon_report_e8b41516-ea5b-44b4-8147-a98414a73941.log.
+
+Saved pantheon_report.pdf in /data/uplink/_ref01_cubic
+ANALYSIS_RC 0
+ANALYSIS_WALL_S 1.1
+ANALYSIS_PEAK_RSS_MB 102.7
+== analysing uplink/_ref02_cubic
+mesg: ttyname failed: Inappropriate ioctl for device
+$ python /pantheon/src/analysis/plot.py --data-dir /data/uplink/_ref02_cubic
+$ tunnel_graph /data/uplink/_ref02_cubic/cubic_datalink_run1.log
+Appended datalink statistics to stats files in /data/uplink/_ref02_cubic
+Saved throughput graphs, delay graphs, and summary graphs in /data/uplink/_ref02_cubic
+$ python /pantheon/src/analysis/report.py --data-dir /data/uplink/_ref02_cubic
+$ uname -sr
+$ sysctl net.core.default_qdisc
+$ sysctl net.core.rmem_default
+$ sysctl net.core.rmem_max
+$ sysctl net.core.wmem_default
+$ sysctl net.core.wmem_max
+$ sysctl net.ipv4.tcp_rmem
+$ sysctl net.ipv4.tcp_wmem
+$ pdflatex -halt-on-error -jobname pantheon_report_946510b0-1c0e-4443-888f-cdfd1d00d0c6 /pantheon/tmp/pantheon_report_946510b0-1c0e-4443-888f-cdfd1d00d0c6.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/pantheon/tmp/pantheon_report_946510b0-1c0e-4443-888f-cdfd1d00d0c6.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+No file pantheon_report_946510b0-1c0e-4443-888f-cdfd1d00d0c6.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 51--51
+[]\OT1/cmtt/m/n/10 third_party/pantheon-tunnel @ f866d3f58d27afd942717625ee3a35
+4cc2e802bd[] 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </data/uplink/_ref02_
+cubic/pantheon_summary_mean.pdf> </data/uplink/_ref02_cubic/pantheon_summary.pd
+f
+
+pdfTeX warning: pdflatex (file /data/uplink/_ref02_cubic/pantheon_summary.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+>] [3] [4] [5 </data/uplink/_ref02_cubic/cubic_datalink_throughput_run1.png> </
+data/uplink/_ref02_cubic/cubic_datalink_delay_run1.png>]
+(./pantheon_report_946510b0-1c0e-4443-888f-cdfd1d00d0c6.aux) )
+(see the transcript file for additional information) </root/.texlive2017/texmf-
+var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on pantheon_report_946510b0-1c0e-4443-888f-cdfd1d00d0c6.pdf (5 p
+ages, 183257 bytes).
+Transcript written on pantheon_report_946510b0-1c0e-4443-888f-cdfd1d00d0c6.log.
+
+Saved pantheon_report.pdf in /data/uplink/_ref02_cubic
+ANALYSIS_RC 0
+ANALYSIS_WALL_S 1.2
+ANALYSIS_PEAK_RSS_MB 103.5
+== analysing uplink/_ref03_cubic
+mesg: ttyname failed: Inappropriate ioctl for device
+$ python /pantheon/src/analysis/plot.py --data-dir /data/uplink/_ref03_cubic
+$ tunnel_graph /data/uplink/_ref03_cubic/cubic_datalink_run1.log
+Appended datalink statistics to stats files in /data/uplink/_ref03_cubic
+Saved throughput graphs, delay graphs, and summary graphs in /data/uplink/_ref03_cubic
+$ python /pantheon/src/analysis/report.py --data-dir /data/uplink/_ref03_cubic
+$ uname -sr
+$ sysctl net.core.default_qdisc
+$ sysctl net.core.rmem_default
+$ sysctl net.core.rmem_max
+$ sysctl net.core.wmem_default
+$ sysctl net.core.wmem_max
+$ sysctl net.ipv4.tcp_rmem
+$ sysctl net.ipv4.tcp_wmem
+$ pdflatex -halt-on-error -jobname pantheon_report_6f81d93a-30cf-47f9-969a-6d871219d42e /pantheon/tmp/pantheon_report_6f81d93a-30cf-47f9-969a-6d871219d42e.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/pantheon/tmp/pantheon_report_6f81d93a-30cf-47f9-969a-6d871219d42e.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+No file pantheon_report_6f81d93a-30cf-47f9-969a-6d871219d42e.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 51--51
+[]\OT1/cmtt/m/n/10 third_party/pantheon-tunnel @ f866d3f58d27afd942717625ee3a35
+4cc2e802bd[] 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </data/uplink/_ref03_
+cubic/pantheon_summary_mean.pdf> </data/uplink/_ref03_cubic/pantheon_summary.pd
+f
+
+pdfTeX warning: pdflatex (file /data/uplink/_ref03_cubic/pantheon_summary.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+>] [3] [4] [5 </data/uplink/_ref03_cubic/cubic_datalink_throughput_run1.png> </
+data/uplink/_ref03_cubic/cubic_datalink_delay_run1.png>]
+(./pantheon_report_6f81d93a-30cf-47f9-969a-6d871219d42e.aux) )
+(see the transcript file for additional information) </root/.texlive2017/texmf-
+var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on pantheon_report_6f81d93a-30cf-47f9-969a-6d871219d42e.pdf (5 p
+ages, 184601 bytes).
+Transcript written on pantheon_report_6f81d93a-30cf-47f9-969a-6d871219d42e.log.
+
+Saved pantheon_report.pdf in /data/uplink/_ref03_cubic
+ANALYSIS_RC 0
+ANALYSIS_WALL_S 1.1
+ANALYSIS_PEAK_RSS_MB 103.3
+== analysing uplink/_ref04_cubic
+mesg: ttyname failed: Inappropriate ioctl for device
+$ python /pantheon/src/analysis/plot.py --data-dir /data/uplink/_ref04_cubic
+$ tunnel_graph /data/uplink/_ref04_cubic/cubic_datalink_run1.log
+Appended datalink statistics to stats files in /data/uplink/_ref04_cubic
+Saved throughput graphs, delay graphs, and summary graphs in /data/uplink/_ref04_cubic
+$ python /pantheon/src/analysis/report.py --data-dir /data/uplink/_ref04_cubic
+$ uname -sr
+$ sysctl net.core.default_qdisc
+$ sysctl net.core.rmem_default
+$ sysctl net.core.rmem_max
+$ sysctl net.core.wmem_default
+$ sysctl net.core.wmem_max
+$ sysctl net.ipv4.tcp_rmem
+$ sysctl net.ipv4.tcp_wmem
+$ pdflatex -halt-on-error -jobname pantheon_report_916e3757-e9c6-4f05-a830-2f2fe6bebfe5 /pantheon/tmp/pantheon_report_916e3757-e9c6-4f05-a830-2f2fe6bebfe5.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/pantheon/tmp/pantheon_report_916e3757-e9c6-4f05-a830-2f2fe6bebfe5.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+No file pantheon_report_916e3757-e9c6-4f05-a830-2f2fe6bebfe5.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 51--51
+[]\OT1/cmtt/m/n/10 third_party/pantheon-tunnel @ f866d3f58d27afd942717625ee3a35
+4cc2e802bd[] 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </data/uplink/_ref04_
+cubic/pantheon_summary_mean.pdf> </data/uplink/_ref04_cubic/pantheon_summary.pd
+f
+
+pdfTeX warning: pdflatex (file /data/uplink/_ref04_cubic/pantheon_summary.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+>] [3] [4] [5 </data/uplink/_ref04_cubic/cubic_datalink_throughput_run1.png> </
+data/uplink/_ref04_cubic/cubic_datalink_delay_run1.png>]
+(./pantheon_report_916e3757-e9c6-4f05-a830-2f2fe6bebfe5.aux) )
+(see the transcript file for additional information) </root/.texlive2017/texmf-
+var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on pantheon_report_916e3757-e9c6-4f05-a830-2f2fe6bebfe5.pdf (5 p
+ages, 182759 bytes).
+Transcript written on pantheon_report_916e3757-e9c6-4f05-a830-2f2fe6bebfe5.log.
+
+Saved pantheon_report.pdf in /data/uplink/_ref04_cubic
+ANALYSIS_RC 0
+ANALYSIS_WALL_S 1.1
+ANALYSIS_PEAK_RSS_MB 103.1
+== analysing uplink/taova
+mesg: ttyname failed: Inappropriate ioctl for device
+$ python /pantheon/src/analysis/plot.py --data-dir /data/uplink/taova
+$ tunnel_graph /data/uplink/taova/taova_datalink_run1.log
+Appended datalink statistics to stats files in /data/uplink/taova
+Saved throughput graphs, delay graphs, and summary graphs in /data/uplink/taova
+$ python /pantheon/src/analysis/report.py --data-dir /data/uplink/taova
+$ uname -sr
+$ sysctl net.core.default_qdisc
+$ sysctl net.core.rmem_default
+$ sysctl net.core.rmem_max
+$ sysctl net.core.wmem_default
+$ sysctl net.core.wmem_max
+$ sysctl net.ipv4.tcp_rmem
+$ sysctl net.ipv4.tcp_wmem
+$ pdflatex -halt-on-error -jobname pantheon_report_f413389a-9df8-4412-bdad-edc3b10b8e32 /pantheon/tmp/pantheon_report_f413389a-9df8-4412-bdad-edc3b10b8e32.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/pantheon/tmp/pantheon_report_f413389a-9df8-4412-bdad-edc3b10b8e32.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+No file pantheon_report_f413389a-9df8-4412-bdad-edc3b10b8e32.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 51--51
+[]\OT1/cmtt/m/n/10 third_party/pantheon-tunnel @ f866d3f58d27afd942717625ee3a35
+4cc2e802bd[] 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </data/uplink/taova/p
+antheon_summary_mean.pdf> </data/uplink/taova/pantheon_summary.pdf
+
+pdfTeX warning: pdflatex (file /data/uplink/taova/pantheon_summary.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+>] [3] [4] [5 </data/uplink/taova/taova_datalink_throughput_run1.png> </data/up
+link/taova/taova_datalink_delay_run1.png>]
+(./pantheon_report_f413389a-9df8-4412-bdad-edc3b10b8e32.aux) )
+(see the transcript file for additional information) </root/.texlive2017/texmf-
+var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on pantheon_report_f413389a-9df8-4412-bdad-edc3b10b8e32.pdf (5 p
+ages, 181453 bytes).
+Transcript written on pantheon_report_f413389a-9df8-4412-bdad-edc3b10b8e32.log.
+
+Saved pantheon_report.pdf in /data/uplink/taova
+ANALYSIS_RC 0
+ANALYSIS_WALL_S 1.2
+ANALYSIS_PEAK_RSS_MB 103.3
+== analysing uplink/vivace
+mesg: ttyname failed: Inappropriate ioctl for device
+$ python /pantheon/src/analysis/plot.py --data-dir /data/uplink/vivace
+$ tunnel_graph /data/uplink/vivace/vivace_datalink_run1.log
+Appended datalink statistics to stats files in /data/uplink/vivace
+Saved throughput graphs, delay graphs, and summary graphs in /data/uplink/vivace
+$ python /pantheon/src/analysis/report.py --data-dir /data/uplink/vivace
+$ uname -sr
+$ sysctl net.core.default_qdisc
+$ sysctl net.core.rmem_default
+$ sysctl net.core.rmem_max
+$ sysctl net.core.wmem_default
+$ sysctl net.core.wmem_max
+$ sysctl net.ipv4.tcp_rmem
+$ sysctl net.ipv4.tcp_wmem
+$ pdflatex -halt-on-error -jobname pantheon_report_a1860235-68f0-4f11-a825-5e7ef7ed702b /pantheon/tmp/pantheon_report_a1860235-68f0-4f11-a825-5e7ef7ed702b.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/pantheon/tmp/pantheon_report_a1860235-68f0-4f11-a825-5e7ef7ed702b.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+No file pantheon_report_a1860235-68f0-4f11-a825-5e7ef7ed702b.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 51--51
+[]\OT1/cmtt/m/n/10 third_party/pantheon-tunnel @ f866d3f58d27afd942717625ee3a35
+4cc2e802bd[] 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </data/uplink/vivace/
+pantheon_summary_mean.pdf> </data/uplink/vivace/pantheon_summary.pdf
+
+pdfTeX warning: pdflatex (file /data/uplink/vivace/pantheon_summary.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+>] [3] [4] [5 </data/uplink/vivace/vivace_datalink_throughput_run1.png> </data/
+uplink/vivace/vivace_datalink_delay_run1.png>]
+(./pantheon_report_a1860235-68f0-4f11-a825-5e7ef7ed702b.aux) )
+(see the transcript file for additional information) </root/.texlive2017/texmf-
+var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on pantheon_report_a1860235-68f0-4f11-a825-5e7ef7ed702b.pdf (5 p
+ages, 184190 bytes).
+Transcript written on pantheon_report_a1860235-68f0-4f11-a825-5e7ef7ed702b.log.
+
+Saved pantheon_report.pdf in /data/uplink/vivace
+ANALYSIS_RC 0
+ANALYSIS_WALL_S 1.2
+ANALYSIS_PEAK_RSS_MB 103.6
+== analysing downlink/indigo
+mesg: ttyname failed: Inappropriate ioctl for device
+$ python /pantheon/src/analysis/plot.py --data-dir /data/downlink/indigo
+$ tunnel_graph /data/downlink/indigo/indigo_datalink_run1.log
+Appended datalink statistics to stats files in /data/downlink/indigo
+Saved throughput graphs, delay graphs, and summary graphs in /data/downlink/indigo
+$ python /pantheon/src/analysis/report.py --data-dir /data/downlink/indigo
+$ uname -sr
+$ sysctl net.core.default_qdisc
+$ sysctl net.core.rmem_default
+$ sysctl net.core.rmem_max
+$ sysctl net.core.wmem_default
+$ sysctl net.core.wmem_max
+$ sysctl net.ipv4.tcp_rmem
+$ sysctl net.ipv4.tcp_wmem
+$ pdflatex -halt-on-error -jobname pantheon_report_5237757e-361c-4687-b9cb-fb220b2757a3 /pantheon/tmp/pantheon_report_5237757e-361c-4687-b9cb-fb220b2757a3.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/pantheon/tmp/pantheon_report_5237757e-361c-4687-b9cb-fb220b2757a3.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+No file pantheon_report_5237757e-361c-4687-b9cb-fb220b2757a3.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 51--51
+[]\OT1/cmtt/m/n/10 third_party/pantheon-tunnel @ f866d3f58d27afd942717625ee3a35
+4cc2e802bd[] 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </data/downlink/indig
+o/pantheon_summary_mean.pdf> </data/downlink/indigo/pantheon_summary.pdf
+
+pdfTeX warning: pdflatex (file /data/downlink/indigo/pantheon_summary.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
+>] [3] [4] [5 </data/downlink/indigo/indigo_datalink_throughput_run1.png> </dat
+a/downlink/indigo/indigo_datalink_delay_run1.png>]
+(./pantheon_report_5237757e-361c-4687-b9cb-fb220b2757a3.aux) )
+(see the transcript file for additional information) </root/.texlive2017/texmf-
+var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on pantheon_report_5237757e-361c-4687-b9cb-fb220b2757a3.pdf (5 p
+ages, 187765 bytes).
+Transcript written on pantheon_report_5237757e-361c-4687-b9cb-fb220b2757a3.log.
+
+Saved pantheon_report.pdf in /data/downlink/indigo
+ANALYSIS_RC 0
+ANALYSIS_WALL_S 1.1
+ANALYSIS_PEAK_RSS_MB 104.3
+== analysing downlink/pcc
+mesg: ttyname failed: Inappropriate ioctl for device
+$ python /pantheon/src/analysis/plot.py --data-dir /data/downlink/pcc
+$ tunnel_graph /data/downlink/pcc/pcc_datalink_run1.log
+Appended datalink statistics to stats files in /data/downlink/pcc
+Saved throughput graphs, delay graphs, and summary graphs in /data/downlink/pcc
+$ python /pantheon/src/analysis/report.py --data-dir /data/downlink/pcc
+$ uname -sr
+$ sysctl net.core.default_qdisc
+$ sysctl net.core.rmem_default
+$ sysctl net.core.rmem_max
+$ sysctl net.core.wmem_default
+$ sysctl net.core.wmem_max
+$ sysctl net.ipv4.tcp_rmem
+$ sysctl net.ipv4.tcp_wmem
+$ pdflatex -halt-on-error -jobname pantheon_report_57195320-88f0-4fc8-8f1c-bbeb71510c8e /pantheon/tmp/pantheon_report_57195320-88f0-4fc8-8f1c-bbeb71510c8e.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/pantheon/tmp/pantheon_report_57195320-88f0-4fc8-8f1c-bbeb71510c8e.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+No file pantheon_report_57195320-88f0-4fc8-8f1c-bbeb71510c8e.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 51--51
+[]\OT1/cmtt/m/n/10 third_party/pantheon-tunnel @ f866d3f58d27afd942717625ee3a35
+4cc2e802bd[] 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </data/downlink/pcc/p
+antheon_summary_mean.pdf> </data/downlink/pcc/pantheon_summary.pdf
+
+pdfTeX warning: pdflatex (file /data/downlink/pcc/pantheon_summary.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+>] [3] [4] [5 </data/downlink/pcc/pcc_datalink_throughput_run1.png> </data/down
+link/pcc/pcc_datalink_delay_run1.png>]
+(./pantheon_report_57195320-88f0-4fc8-8f1c-bbeb71510c8e.aux) )
+(see the transcript file for additional information) </root/.texlive2017/texmf-
+var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on pantheon_report_57195320-88f0-4fc8-8f1c-bbeb71510c8e.pdf (5 p
+ages, 169108 bytes).
+Transcript written on pantheon_report_57195320-88f0-4fc8-8f1c-bbeb71510c8e.log.
+
+Saved pantheon_report.pdf in /data/downlink/pcc
+ANALYSIS_RC 0
+ANALYSIS_WALL_S 1.2
+ANALYSIS_PEAK_RSS_MB 104.5
+== analysing downlink/_ref00_cubic
+mesg: ttyname failed: Inappropriate ioctl for device
+$ python /pantheon/src/analysis/plot.py --data-dir /data/downlink/_ref00_cubic
+$ tunnel_graph /data/downlink/_ref00_cubic/cubic_datalink_run1.log
+Appended datalink statistics to stats files in /data/downlink/_ref00_cubic
+Saved throughput graphs, delay graphs, and summary graphs in /data/downlink/_ref00_cubic
+$ python /pantheon/src/analysis/report.py --data-dir /data/downlink/_ref00_cubic
+$ uname -sr
+$ sysctl net.core.default_qdisc
+$ sysctl net.core.rmem_default
+$ sysctl net.core.rmem_max
+$ sysctl net.core.wmem_default
+$ sysctl net.core.wmem_max
+$ sysctl net.ipv4.tcp_rmem
+$ sysctl net.ipv4.tcp_wmem
+$ pdflatex -halt-on-error -jobname pantheon_report_9d0a3cec-7a5a-4056-8fed-c5db41cf5edc /pantheon/tmp/pantheon_report_9d0a3cec-7a5a-4056-8fed-c5db41cf5edc.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/pantheon/tmp/pantheon_report_9d0a3cec-7a5a-4056-8fed-c5db41cf5edc.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+No file pantheon_report_9d0a3cec-7a5a-4056-8fed-c5db41cf5edc.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 51--51
+[]\OT1/cmtt/m/n/10 third_party/pantheon-tunnel @ f866d3f58d27afd942717625ee3a35
+4cc2e802bd[] 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </data/downlink/_ref0
+0_cubic/pantheon_summary_mean.pdf> </data/downlink/_ref00_cubic/pantheon_summar
+y.pdf
+
+pdfTeX warning: pdflatex (file /data/downlink/_ref00_cubic/pantheon_summary.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+>] [3] [4] [5 </data/downlink/_ref00_cubic/cubic_datalink_throughput_run1.png> 
+</data/downlink/_ref00_cubic/cubic_datalink_delay_run1.png>]
+(./pantheon_report_9d0a3cec-7a5a-4056-8fed-c5db41cf5edc.aux) )
+(see the transcript file for additional information) </root/.texlive2017/texmf-
+var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on pantheon_report_9d0a3cec-7a5a-4056-8fed-c5db41cf5edc.pdf (5 p
+ages, 204303 bytes).
+Transcript written on pantheon_report_9d0a3cec-7a5a-4056-8fed-c5db41cf5edc.log.
+
+Saved pantheon_report.pdf in /data/downlink/_ref00_cubic
+ANALYSIS_RC 0
+ANALYSIS_WALL_S 1.2
+ANALYSIS_PEAK_RSS_MB 103.7
+== analysing downlink/_ref01_cubic
+mesg: ttyname failed: Inappropriate ioctl for device
+$ python /pantheon/src/analysis/plot.py --data-dir /data/downlink/_ref01_cubic
+$ tunnel_graph /data/downlink/_ref01_cubic/cubic_datalink_run1.log
+Appended datalink statistics to stats files in /data/downlink/_ref01_cubic
+Saved throughput graphs, delay graphs, and summary graphs in /data/downlink/_ref01_cubic
+$ python /pantheon/src/analysis/report.py --data-dir /data/downlink/_ref01_cubic
+$ uname -sr
+$ sysctl net.core.default_qdisc
+$ sysctl net.core.rmem_default
+$ sysctl net.core.rmem_max
+$ sysctl net.core.wmem_default
+$ sysctl net.core.wmem_max
+$ sysctl net.ipv4.tcp_rmem
+$ sysctl net.ipv4.tcp_wmem
+$ pdflatex -halt-on-error -jobname pantheon_report_1939b4a2-73a6-4f2d-a5ab-04df79dc6431 /pantheon/tmp/pantheon_report_1939b4a2-73a6-4f2d-a5ab-04df79dc6431.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/pantheon/tmp/pantheon_report_1939b4a2-73a6-4f2d-a5ab-04df79dc6431.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+No file pantheon_report_1939b4a2-73a6-4f2d-a5ab-04df79dc6431.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 51--51
+[]\OT1/cmtt/m/n/10 third_party/pantheon-tunnel @ f866d3f58d27afd942717625ee3a35
+4cc2e802bd[] 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </data/downlink/_ref0
+1_cubic/pantheon_summary_mean.pdf> </data/downlink/_ref01_cubic/pantheon_summar
+y.pdf
+
+pdfTeX warning: pdflatex (file /data/downlink/_ref01_cubic/pantheon_summary.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+>] [3] [4] [5 </data/downlink/_ref01_cubic/cubic_datalink_throughput_run1.png> 
+</data/downlink/_ref01_cubic/cubic_datalink_delay_run1.png>]
+(./pantheon_report_1939b4a2-73a6-4f2d-a5ab-04df79dc6431.aux) )
+(see the transcript file for additional information) </root/.texlive2017/texmf-
+var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on pantheon_report_1939b4a2-73a6-4f2d-a5ab-04df79dc6431.pdf (5 p
+ages, 203372 bytes).
+Transcript written on pantheon_report_1939b4a2-73a6-4f2d-a5ab-04df79dc6431.log.
+
+Saved pantheon_report.pdf in /data/downlink/_ref01_cubic
+ANALYSIS_RC 0
+ANALYSIS_WALL_S 1.2
+ANALYSIS_PEAK_RSS_MB 104.2
+== analysing downlink/_ref02_cubic
+mesg: ttyname failed: Inappropriate ioctl for device
+$ python /pantheon/src/analysis/plot.py --data-dir /data/downlink/_ref02_cubic
+$ tunnel_graph /data/downlink/_ref02_cubic/cubic_datalink_run1.log
+Appended datalink statistics to stats files in /data/downlink/_ref02_cubic
+Saved throughput graphs, delay graphs, and summary graphs in /data/downlink/_ref02_cubic
+$ python /pantheon/src/analysis/report.py --data-dir /data/downlink/_ref02_cubic
+$ uname -sr
+$ sysctl net.core.default_qdisc
+$ sysctl net.core.rmem_default
+$ sysctl net.core.rmem_max
+$ sysctl net.core.wmem_default
+$ sysctl net.core.wmem_max
+$ sysctl net.ipv4.tcp_rmem
+$ sysctl net.ipv4.tcp_wmem
+$ pdflatex -halt-on-error -jobname pantheon_report_da4a0e5f-876d-4814-8499-997356a8bee5 /pantheon/tmp/pantheon_report_da4a0e5f-876d-4814-8499-997356a8bee5.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/pantheon/tmp/pantheon_report_da4a0e5f-876d-4814-8499-997356a8bee5.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+No file pantheon_report_da4a0e5f-876d-4814-8499-997356a8bee5.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 51--51
+[]\OT1/cmtt/m/n/10 third_party/pantheon-tunnel @ f866d3f58d27afd942717625ee3a35
+4cc2e802bd[] 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </data/downlink/_ref0
+2_cubic/pantheon_summary_mean.pdf> </data/downlink/_ref02_cubic/pantheon_summar
+y.pdf
+
+pdfTeX warning: pdflatex (file /data/downlink/_ref02_cubic/pantheon_summary.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+>] [3] [4] [5 </data/downlink/_ref02_cubic/cubic_datalink_throughput_run1.png> 
+</data/downlink/_ref02_cubic/cubic_datalink_delay_run1.png>]
+(./pantheon_report_da4a0e5f-876d-4814-8499-997356a8bee5.aux) )
+(see the transcript file for additional information) </root/.texlive2017/texmf-
+var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on pantheon_report_da4a0e5f-876d-4814-8499-997356a8bee5.pdf (5 p
+ages, 200346 bytes).
+Transcript written on pantheon_report_da4a0e5f-876d-4814-8499-997356a8bee5.log.
+
+Saved pantheon_report.pdf in /data/downlink/_ref02_cubic
+ANALYSIS_RC 0
+ANALYSIS_WALL_S 1.1
+ANALYSIS_PEAK_RSS_MB 104.0
+== analysing downlink/_ref03_cubic
+mesg: ttyname failed: Inappropriate ioctl for device
+$ python /pantheon/src/analysis/plot.py --data-dir /data/downlink/_ref03_cubic
+$ tunnel_graph /data/downlink/_ref03_cubic/cubic_datalink_run1.log
+Appended datalink statistics to stats files in /data/downlink/_ref03_cubic
+Saved throughput graphs, delay graphs, and summary graphs in /data/downlink/_ref03_cubic
+$ python /pantheon/src/analysis/report.py --data-dir /data/downlink/_ref03_cubic
+$ uname -sr
+$ sysctl net.core.default_qdisc
+$ sysctl net.core.rmem_default
+$ sysctl net.core.rmem_max
+$ sysctl net.core.wmem_default
+$ sysctl net.core.wmem_max
+$ sysctl net.ipv4.tcp_rmem
+$ sysctl net.ipv4.tcp_wmem
+$ pdflatex -halt-on-error -jobname pantheon_report_ab7fc526-eb32-48a6-a139-707bf605a236 /pantheon/tmp/pantheon_report_ab7fc526-eb32-48a6-a139-707bf605a236.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/pantheon/tmp/pantheon_report_ab7fc526-eb32-48a6-a139-707bf605a236.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+No file pantheon_report_ab7fc526-eb32-48a6-a139-707bf605a236.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 51--51
+[]\OT1/cmtt/m/n/10 third_party/pantheon-tunnel @ f866d3f58d27afd942717625ee3a35
+4cc2e802bd[] 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </data/downlink/_ref0
+3_cubic/pantheon_summary_mean.pdf> </data/downlink/_ref03_cubic/pantheon_summar
+y.pdf
+
+pdfTeX warning: pdflatex (file /data/downlink/_ref03_cubic/pantheon_summary.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+>] [3] [4] [5 </data/downlink/_ref03_cubic/cubic_datalink_throughput_run1.png> 
+</data/downlink/_ref03_cubic/cubic_datalink_delay_run1.png>]
+(./pantheon_report_ab7fc526-eb32-48a6-a139-707bf605a236.aux) )
+(see the transcript file for additional information) </root/.texlive2017/texmf-
+var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on pantheon_report_ab7fc526-eb32-48a6-a139-707bf605a236.pdf (5 p
+ages, 205698 bytes).
+Transcript written on pantheon_report_ab7fc526-eb32-48a6-a139-707bf605a236.log.
+
+Saved pantheon_report.pdf in /data/downlink/_ref03_cubic
+ANALYSIS_RC 0
+ANALYSIS_WALL_S 1.2
+ANALYSIS_PEAK_RSS_MB 104.0
+== analysing downlink/_ref04_cubic
+mesg: ttyname failed: Inappropriate ioctl for device
+$ python /pantheon/src/analysis/plot.py --data-dir /data/downlink/_ref04_cubic
+$ tunnel_graph /data/downlink/_ref04_cubic/cubic_datalink_run1.log
+Appended datalink statistics to stats files in /data/downlink/_ref04_cubic
+Saved throughput graphs, delay graphs, and summary graphs in /data/downlink/_ref04_cubic
+$ python /pantheon/src/analysis/report.py --data-dir /data/downlink/_ref04_cubic
+$ uname -sr
+$ sysctl net.core.default_qdisc
+$ sysctl net.core.rmem_default
+$ sysctl net.core.rmem_max
+$ sysctl net.core.wmem_default
+$ sysctl net.core.wmem_max
+$ sysctl net.ipv4.tcp_rmem
+$ sysctl net.ipv4.tcp_wmem
+$ pdflatex -halt-on-error -jobname pantheon_report_bb17ed21-a58d-4d6c-9931-408a8d1c23e5 /pantheon/tmp/pantheon_report_bb17ed21-a58d-4d6c-9931-408a8d1c23e5.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/pantheon/tmp/pantheon_report_bb17ed21-a58d-4d6c-9931-408a8d1c23e5.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+No file pantheon_report_bb17ed21-a58d-4d6c-9931-408a8d1c23e5.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 51--51
+[]\OT1/cmtt/m/n/10 third_party/pantheon-tunnel @ f866d3f58d27afd942717625ee3a35
+4cc2e802bd[] 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </data/downlink/_ref0
+4_cubic/pantheon_summary_mean.pdf> </data/downlink/_ref04_cubic/pantheon_summar
+y.pdf
+
+pdfTeX warning: pdflatex (file /data/downlink/_ref04_cubic/pantheon_summary.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+>] [3] [4] [5 </data/downlink/_ref04_cubic/cubic_datalink_throughput_run1.png> 
+</data/downlink/_ref04_cubic/cubic_datalink_delay_run1.png>]
+(./pantheon_report_bb17ed21-a58d-4d6c-9931-408a8d1c23e5.aux) )
+(see the transcript file for additional information) </root/.texlive2017/texmf-
+var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on pantheon_report_bb17ed21-a58d-4d6c-9931-408a8d1c23e5.pdf (5 p
+ages, 157775 bytes).
+Transcript written on pantheon_report_bb17ed21-a58d-4d6c-9931-408a8d1c23e5.log.
+
+Saved pantheon_report.pdf in /data/downlink/_ref04_cubic
+ANALYSIS_RC 0
+ANALYSIS_WALL_S 1.4
+ANALYSIS_PEAK_RSS_MB 105.1
+== analysing downlink/taova
+mesg: ttyname failed: Inappropriate ioctl for device
+$ python /pantheon/src/analysis/plot.py --data-dir /data/downlink/taova
+$ tunnel_graph /data/downlink/taova/taova_datalink_run1.log
+Appended datalink statistics to stats files in /data/downlink/taova
+Saved throughput graphs, delay graphs, and summary graphs in /data/downlink/taova
+$ python /pantheon/src/analysis/report.py --data-dir /data/downlink/taova
+$ uname -sr
+$ sysctl net.core.default_qdisc
+$ sysctl net.core.rmem_default
+$ sysctl net.core.rmem_max
+$ sysctl net.core.wmem_default
+$ sysctl net.core.wmem_max
+$ sysctl net.ipv4.tcp_rmem
+$ sysctl net.ipv4.tcp_wmem
+$ pdflatex -halt-on-error -jobname pantheon_report_ccf7c560-eb3c-4349-879d-e47f5512b656 /pantheon/tmp/pantheon_report_ccf7c560-eb3c-4349-879d-e47f5512b656.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/pantheon/tmp/pantheon_report_ccf7c560-eb3c-4349-879d-e47f5512b656.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+No file pantheon_report_ccf7c560-eb3c-4349-879d-e47f5512b656.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 51--51
+[]\OT1/cmtt/m/n/10 third_party/pantheon-tunnel @ f866d3f58d27afd942717625ee3a35
+4cc2e802bd[] 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </data/downlink/taova
+/pantheon_summary_mean.pdf> </data/downlink/taova/pantheon_summary.pdf
+
+pdfTeX warning: pdflatex (file /data/downlink/taova/pantheon_summary.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+>] [3] [4] [5 </data/downlink/taova/taova_datalink_throughput_run1.png> </data/
+downlink/taova/taova_datalink_delay_run1.png>]
+(./pantheon_report_ccf7c560-eb3c-4349-879d-e47f5512b656.aux) )
+(see the transcript file for additional information) </root/.texlive2017/texmf-
+var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on pantheon_report_ccf7c560-eb3c-4349-879d-e47f5512b656.pdf (5 p
+ages, 175611 bytes).
+Transcript written on pantheon_report_ccf7c560-eb3c-4349-879d-e47f5512b656.log.
+
+Saved pantheon_report.pdf in /data/downlink/taova
+ANALYSIS_RC 0
+ANALYSIS_WALL_S 1.3
+ANALYSIS_PEAK_RSS_MB 105.0
+== analysing downlink/vivace
+mesg: ttyname failed: Inappropriate ioctl for device
+$ python /pantheon/src/analysis/plot.py --data-dir /data/downlink/vivace
+$ tunnel_graph /data/downlink/vivace/vivace_datalink_run1.log
+Appended datalink statistics to stats files in /data/downlink/vivace
+Saved throughput graphs, delay graphs, and summary graphs in /data/downlink/vivace
+$ python /pantheon/src/analysis/report.py --data-dir /data/downlink/vivace
+$ uname -sr
+$ sysctl net.core.default_qdisc
+$ sysctl net.core.rmem_default
+$ sysctl net.core.rmem_max
+$ sysctl net.core.wmem_default
+$ sysctl net.core.wmem_max
+$ sysctl net.ipv4.tcp_rmem
+$ sysctl net.ipv4.tcp_wmem
+$ pdflatex -halt-on-error -jobname pantheon_report_c2e2602c-7275-4e63-910e-2ee5c69f7af8 /pantheon/tmp/pantheon_report_c2e2602c-7275-4e63-910e-2ee5c69f7af8.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/pantheon/tmp/pantheon_report_c2e2602c-7275-4e63-910e-2ee5c69f7af8.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+No file pantheon_report_c2e2602c-7275-4e63-910e-2ee5c69f7af8.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 51--51
+[]\OT1/cmtt/m/n/10 third_party/pantheon-tunnel @ f866d3f58d27afd942717625ee3a35
+4cc2e802bd[] 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </data/downlink/vivac
+e/pantheon_summary_mean.pdf> </data/downlink/vivace/pantheon_summary.pdf
+
+pdfTeX warning: pdflatex (file /data/downlink/vivace/pantheon_summary.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
+>] [3] [4] [5 </data/downlink/vivace/vivace_datalink_throughput_run1.png> </dat
+a/downlink/vivace/vivace_datalink_delay_run1.png>]
+(./pantheon_report_c2e2602c-7275-4e63-910e-2ee5c69f7af8.aux) )
+(see the transcript file for additional information) </root/.texlive2017/texmf-
+var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on pantheon_report_c2e2602c-7275-4e63-910e-2ee5c69f7af8.pdf (5 p
+ages, 188845 bytes).
+Transcript written on pantheon_report_c2e2602c-7275-4e63-910e-2ee5c69f7af8.log.
+
+Saved pantheon_report.pdf in /data/downlink/vivace
+ANALYSIS_RC 0
+ANALYSIS_WALL_S 1.2
+ANALYSIS_PEAK_RSS_MB 103.7
+mesg: ttyname failed: Inappropriate ioctl for device
+
+bundle: /home/pep-admin/gladi3-derp-20261109T083611Z/provenance
+pull it to the laptop with:
+  rsync -a --info=progress2 <pepstar>:/home/pep-admin/gladi3-derp-20261109T083611Z ~/ccbench-remote/results/

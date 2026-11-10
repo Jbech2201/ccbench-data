@@ -1,0 +1,44 @@
+$ /pantheon/src/experiments/git_summary.sh
+$ ssh pantheon@100.101.63.72 "cd /pantheon; /pantheon/src/experiments/git_summary.sh"
+Testing scheme indigo for experiment run 1/1...
+$ /pantheon/src/wrappers/indigo.py run_first
+$ ntpdate -t 5 -quv 202.65.114.202
+ 8 Nov 10:55:18 ntpdate[2280]: ntpdate 4.2.8p10@1.3728-o (1)
+server 202.65.114.202, stratum 2, offset -0.001018, delay 0.06860
+ 8 Nov 10:55:33 ntpdate[2280]: adjust time server 202.65.114.202 offset -0.001018 sec
+$ ssh pantheon@100.101.63.72 ntpdate -t 5 -quv 202.65.114.202
+ 8 Nov 10:55:34 ntpdate[2010]: ntpdate 4.2.8p10@1.3728-o (1)
+server 202.65.114.202, stratum 2, offset 0.003694, delay 0.06387
+ 8 Nov 10:55:49 ntpdate[2010]: adjust time server 202.65.114.202 offset 0.003694 sec
+[tunnel server manager (tsm)] $ ssh pantheon@100.101.63.72 python /pantheon/src/experiments/tunnel_manager.py
+tunnel manager is running
+[tunnel client manager (tcm)] $ python /pantheon/src/experiments/tunnel_manager.py
+prompt [tsm]
+tunnel manager is running
+prompt [tcm]
+[tsm] tunnel 1 mm-tunnelserver --ingress-log=/pantheon/tmp/indigo_acklink_run1_flow1_uidfc340690-3342-4ed9-9f6f-a482648ab9d3.log.ingress --egress-log=/pantheon/tmp/indigo_datalink_run1_flow1_uidfc340690-3342-4ed9-9f6f-a482648ab9d3.log.egress
+[tsm] tunnel 1 readline
+[tcm] tunnel 1 mm-tunnelclient 100.101.63.72 47644 100.64.0.2 100.64.0.1 --ingress-log=/pantheon/tmp/indigo_datalink_run1_flow1_uidfc340690-3342-4ed9-9f6f-a482648ab9d3.log.ingress --egress-log=/pantheon/tmp/indigo_acklink_run1_flow1_uidfc340690-3342-4ed9-9f6f-a482648ab9d3.log.egress
+[tcm] tunnel 1 readline
+Tunnelclient listening for server on port 54843
+Tunnel is connected
+[tsm] tunnel 1 python /pantheon/src/wrappers/indigo.py sender 33543
+[tcm] tunnel 1 python /pantheon/src/wrappers/indigo.py receiver 100.64.0.1 33543
+$ scp -C pantheon@100.101.63.72:/pantheon/tmp/indigo_datalink_run1_flow1_uidfc340690-3342-4ed9-9f6f-a482648ab9d3.log.egress /pantheon/tmp/indigo_datalink_run1_flow1_uidfc340690-3342-4ed9-9f6f-a482648ab9d3.log.egress
+[tcm] halt
+kill_proc_group: killed process group with pgid 2284
+[tsm] halt
+kill_proc_group: killed process group with pgid 2015
+$ scp -C pantheon@100.101.63.72:/pantheon/tmp/indigo_acklink_run1_flow1_uidfc340690-3342-4ed9-9f6f-a482648ab9d3.log.ingress /pantheon/tmp/indigo_acklink_run1_flow1_uidfc340690-3342-4ed9-9f6f-a482648ab9d3.log.ingress
+$ /pantheon/src/experiments/merge_tunnel_logs.py single -i /pantheon/tmp/indigo_datalink_run1_flow1_uidfc340690-3342-4ed9-9f6f-a482648ab9d3.log.ingress -e /pantheon/tmp/indigo_datalink_run1_flow1_uidfc340690-3342-4ed9-9f6f-a482648ab9d3.log.egress -o /pantheon/tmp/indigo_datalink_run1_flow1_uid6878661e-c98b-4ab5-8f2b-a919b5ebd801.log.merged -i-clock-offset -1.018 -e-clock-offset 3.694
+$ /pantheon/src/experiments/merge_tunnel_logs.py single -i /pantheon/tmp/indigo_acklink_run1_flow1_uidfc340690-3342-4ed9-9f6f-a482648ab9d3.log.ingress -e /pantheon/tmp/indigo_acklink_run1_flow1_uidfc340690-3342-4ed9-9f6f-a482648ab9d3.log.egress -o /pantheon/tmp/indigo_acklink_run1_flow1_uid6878661e-c98b-4ab5-8f2b-a919b5ebd801.log.merged -i-clock-offset 3.694 -e-clock-offset -1.018
+$ /pantheon/src/experiments/merge_tunnel_logs.py multiple -o /data/downlink/indigo/indigo_datalink_run1.log /pantheon/tmp/indigo_datalink_run1_flow1_uid6878661e-c98b-4ab5-8f2b-a919b5ebd801.log.merged
+$ /pantheon/src/experiments/merge_tunnel_logs.py multiple -o /data/downlink/indigo/indigo_acklink_run1.log /pantheon/tmp/indigo_acklink_run1_flow1_uid6878661e-c98b-4ab5-8f2b-a919b5ebd801.log.merged
+kill_proc_group: killed process group with pgid 2282
+kill_proc_group: killed process group with pgid 2283
+Start at: 2026-11-08 10:55:53
+End at: 2026-11-08 10:56:13
+Local clock offset: -1.018 ms
+Remote clock offset: 3.694 ms
+Done testing indigo
+All tests done!

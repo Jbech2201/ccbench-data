@@ -1,0 +1,9 @@
+=========== 2026-11-07T11:23:10Z ukur parameter Starlink
+== rute sebelum:
+default via 10.117.92.1 dev wlp13s0 metric 40 
+default via 192.168.1.1 dev enp12s0 proto dhcp src 192.168.1.196 metric 100 
+default via 192.168.31.1 dev enx5414a7e42e45 proto dhcp src 192.168.31.94 metric 101 
+default via 10.117.92.1 dev wlp13s0 proto dhcp src 10.117.94.183 metric 600 
+== pembalik 20 menit terpasang (batalkan: touch /tmp/starlink-keep)
+== egress sekarang: 179.65.194.192   (harus 179.65.194.192 = Starlink)
+== gate jalur (butuh direct; DERP = TCP-over-TCP, tidak sah)

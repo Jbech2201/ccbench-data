@@ -1,0 +1,54 @@
+[2026-11-09T20:36:31Z] ===== PUTARAN 1/5
+[2026-11-09T20:36:31Z] image: ccbench-remote:20261105T152436Z
+[2026-11-09T20:36:32Z] image identity matches on both hosts: layers=16105bbcee68ee78fdd20b20222bc94a9c243ff45d3c23de0fddf1d10677163d config=52633cc17b2be983b37cd746e20712529806ba65b214727029806eda7840504b
+[2026-11-09T20:36:32Z] disk here: 262G free
+[2026-11-09T20:36:32Z] path at start: pong from cbr2server (100.101.63.72) via 202.4.186.8:41641 in 69ms
+[2026-11-09T20:36:32Z] starting peer container on cbr2@100.101.63.72
+2026-11-09T20:36:40Z peer sshd procs: 1
+[2026-11-09T20:36:41Z] peer container up (--privileged --device /dev/net/tun), key installed for pantheon, sshd on 2222
+[2026-11-09T20:36:41Z] starting local container
+[2026-11-09T20:36:43Z] per-scheme setup done on both sides
+[2026-11-09T20:36:43Z] interfaces: not pinned; the tunnel follows the route to 100.101.63.72
+[2026-11-09T20:36:43Z] order for uplink: taova indigo vivace pcc 
+[2026-11-09T20:36:43Z] START uplink taova (--sender local, -t 300 x 1)
+[2026-11-09T20:42:25Z] DONE  uplink taova  2026-11-09T20:36:43Z -> 2026-11-09T20:42:25Z
+[2026-11-09T20:42:25Z] path for uplink/taova: samples=34 distinct_routes=1 [ 202.4.186.8:41641 ]
+[2026-11-09T20:42:26Z] wrapper output for uplink/taova: local=172B remote=55B
+4.9M	/home/pep-admin/uplink5x5-starlink-20261109T203631Z/round-1/data/uplink/taova
+[2026-11-09T20:42:27Z] disk left: 262G
+[2026-11-09T20:42:27Z] START uplink indigo (--sender local, -t 300 x 1)
+[2026-11-09T20:48:10Z] DONE  uplink indigo  2026-11-09T20:42:27Z -> 2026-11-09T20:48:10Z
+[2026-11-09T20:48:10Z] path for uplink/indigo: samples=34 distinct_routes=2 [ 202.4.186.8:41641 DERP(sin) ]
+[2026-11-09T20:48:10Z] WARNING uplink/indigo saw a DERP RELAY during the run; relayed data is TCP-over-TCP (docs/decisions/004)
+[2026-11-09T20:48:10Z] WARNING uplink/indigo CHANGED ROUTE mid-run; do not compare it against another scheme (docs/decisions/008)
+[2026-11-09T20:48:11Z] wrapper output for uplink/indigo: local=5666B remote=56B
+6.2M	/home/pep-admin/uplink5x5-starlink-20261109T203631Z/round-1/data/uplink/indigo
+[2026-11-09T20:48:11Z] disk left: 262G
+[2026-11-09T20:48:11Z] START uplink vivace (--sender local, -t 300 x 1)
+[2026-11-09T20:53:57Z] DONE  uplink vivace  2026-11-09T20:48:11Z -> 2026-11-09T20:53:57Z
+[2026-11-09T20:53:57Z] path for uplink/vivace: samples=35 distinct_routes=1 [ 202.4.186.8:41641 ]
+[2026-11-09T20:53:58Z] wrapper output for uplink/vivace: local=9263B remote=181B
+14M	/home/pep-admin/uplink5x5-starlink-20261109T203631Z/round-1/data/uplink/vivace
+[2026-11-09T20:53:59Z] disk left: 262G
+[2026-11-09T20:53:59Z] START uplink pcc (--sender local, -t 300 x 1)
+[2026-11-09T20:59:50Z] DONE  uplink pcc  2026-11-09T20:53:59Z -> 2026-11-09T20:59:50Z
+[2026-11-09T20:59:50Z] path for uplink/pcc: samples=35 distinct_routes=1 [ 202.4.186.8:41641 ]
+[2026-11-09T20:59:51Z] wrapper output for uplink/pcc: local=27913B remote=178B
+22M	/home/pep-admin/uplink5x5-starlink-20261109T203631Z/round-1/data/uplink/pcc
+[2026-11-09T20:59:51Z] disk left: 262G
+[2026-11-09T20:59:51Z] matrix finished; now run scripts/12_collect.sh
+/home/pep-admin/uplink5x5-starlink-20261109T203631Z/round-1
+[2026-11-09T20:59:53Z] PUTARAN 1 MATRIX_EXIT=0
+[2026-11-09T20:59:53Z] ===== PUTARAN 2/5
+[2026-11-09T20:59:53Z] image: ccbench-remote:20261105T152436Z
+[2026-11-09T20:59:54Z] image identity matches on both hosts: layers=16105bbcee68ee78fdd20b20222bc94a9c243ff45d3c23de0fddf1d10677163d config=52633cc17b2be983b37cd746e20712529806ba65b214727029806eda7840504b
+[2026-11-09T20:59:54Z] disk here: 262G free
+[2026-11-09T20:59:54Z] path at start: pong from cbr2server (100.101.63.72) via 202.4.186.8:41641 in 64ms
+[2026-11-09T20:59:54Z] starting peer container on cbr2@100.101.63.72
+2026-11-09T21:00:02Z peer sshd procs: 1
+[2026-11-09T21:00:03Z] peer container up (--privileged --device /dev/net/tun), key installed for pantheon, sshd on 2222
+[2026-11-09T21:00:03Z] starting local container
+[2026-11-09T21:00:06Z] per-scheme setup done on both sides
+[2026-11-09T21:00:06Z] interfaces: not pinned; the tunnel follows the route to 100.101.63.72
+[2026-11-09T21:00:06Z] order for uplink: vivace taova pcc indigo 
+[2026-11-09T21:00:06Z] START uplink vivace (--sender local, -t 300 x 1)

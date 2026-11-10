@@ -1,0 +1,9 @@
+$ /pantheon/src/wrappers/taova.py setup_after_reboot
+$ /pantheon/src/wrappers/indigo.py setup_after_reboot
+$ /pantheon/src/wrappers/pcc.py setup_after_reboot
+$ /pantheon/src/wrappers/vivace.py setup_after_reboot
+$ /pantheon/src/wrappers/cubic.py setup_after_reboot
+mesg: ttyname failed: Inappropriate ioctl for device
+$ /pantheon/src/wrappers/pcc.py setup_after_reboot
+$ /pantheon/src/wrappers/vivace.py setup_after_reboot
+$ /pantheon/src/wrappers/cubic.py setup_after_reboot
